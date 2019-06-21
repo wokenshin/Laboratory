@@ -16,6 +16,7 @@
  */
 @interface MasonryVC ()
 @property (nonatomic,strong)UIButton    *btnUpdate;
+@property (nonatomic,strong)UILabel     *labB;
 @property (nonatomic,assign)BOOL          isChange;
 @end
 
@@ -51,13 +52,13 @@
         make.size.mas_equalTo(CGSizeMake(100, 100));
     }];
     
-    UILabel *labB = [[UILabel alloc] init];
-    labB.textColor = [UIColor greenColor];
-    labB.backgroundColor = FXW_HEXColor(0x0498fa);
-    labB.text = @"倍数布局";
-    labB.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:labB];
-    [labB mas_makeConstraints:^(MASConstraintMaker *make) {
+    _labB = [[UILabel alloc] init];
+    _labB.textColor = [UIColor greenColor];
+    _labB.backgroundColor = FXW_HEXColor(0x0498fa);
+    _labB.text = @"倍数布局";
+    _labB.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:_labB];
+    [_labB mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(labA.mas_bottom).offset(10);
         make.centerX.mas_equalTo(0);
         make.height.mas_equalTo(labA.mas_width).multipliedBy(0.5);//相对于labA高度的 0.5倍
@@ -70,7 +71,8 @@
     [_btnUpdate addTarget:self action:@selector(clickBtnUpdate) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_btnUpdate];
     [_btnUpdate mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(0);
+        make.top.mas_equalTo(self->_labB.mas_bottom).offset(10);
+        make.centerX.mas_equalTo(0);
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(36*2);
     }];
@@ -105,13 +107,15 @@
     _isChange = !_isChange;
     if (_isChange) {
         [_btnUpdate mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.center.mas_equalTo(0);
+            make.top.mas_equalTo(self->_labB.mas_bottom).offset(10);
+            make.centerX.mas_equalTo(0);
             make.width.mas_equalTo(140);
             make.height.mas_equalTo(36);
         }];
     }else{
         [_btnUpdate mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.center.mas_equalTo(0);
+            make.top.mas_equalTo(self->_labB.mas_bottom).offset(10);
+            make.centerX.mas_equalTo(0);
             make.width.mas_equalTo(120);
             make.height.mas_equalTo(36*2);
         }];
