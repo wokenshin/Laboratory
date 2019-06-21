@@ -9,17 +9,38 @@
 #import "BaseTableVC.h"
 
 @interface BaseTableVC ()
-
+@property (nonatomic, strong) UITableView                   *tableView;
+@property (nonatomic, strong) NSMutableArray                *mArrData;
 @end
 
 @implementation BaseTableVC
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    _tableView = [[UITableView alloc] init];
+    _tableView.backgroundColor = [UIColor whiteColor];
+    _tableView.dataSource = self;
+    _tableView.delegate   = self;
+    
+    //隐藏多余遇分割线【注释掉 可看效果】
+    UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
+    [_tableView setTableFooterView:v];
+    
+    [self.view addSubview:_tableView];
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_topLayoutGuide);//导航栏底部
+        make.left.mas_equalTo(0);
+        make.right.mas_equalTo(0);
+        make.bottom.equalTo(self.mas_bottomLayoutGuide);//UITabbar顶部 这样底部就不会被遮挡了
+    }];
     
 }
 
-- (void)addDataWithTitle:(NSString *)title andDetail:(NSString *)detail{
+- (void)base_reloadMyTableView{
+    [_tableView reloadData];
+}
+
+- (void)base_addDataWithTitle:(NSString *)title andDetail:(NSString *)detail{
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] init];
     [mDic setObject:title  forKey:@"title"];
     [mDic setObject:detail forKey:@"detail"];
@@ -59,27 +80,13 @@
     
     NSDictionary *dic = [self.mArrData objectAtIndex:indexPath.row];
     NSString *title   = [dic objectForKey:@"title"];
-    [self clickCellWithTitle:title];
+    [self base_clickCellWithTitle:title];
 }
 
 //cell 被点击的时候会调用该方法
-- (void)clickCellWithTitle:(NSString *)title{}
+- (void)base_clickCellWithTitle:(NSString *)title{}
 
 #pragma mark 懒加载
-- (UITableView *)tableView{
-    if (_tableView == nil){
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, screenWidth, screenHeight - 64 - 49)];
-        _tableView.backgroundColor = [UIColor whiteColor];
-        _tableView.dataSource = self;
-        _tableView.delegate   = self;
-        
-        //隐藏多余遇分割线【注释掉 可看效果】
-        UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
-        [_tableView setTableFooterView:v];
-    }
-    return _tableView;
-}
-
 - (NSMutableArray *)mArrData{
     if (_mArrData == nil){
         _mArrData = [[NSMutableArray alloc] init];
@@ -87,7 +94,7 @@
     return _mArrData;
 }
 
-- (void)fxw_pushVC:(UIViewController *)pushVC{
+- (void)base_pushVC:(UIViewController *)pushVC{
     pushVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:pushVC animated:YES];
 }

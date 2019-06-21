@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0484195D22BC9DD10042D8BE /* InjectionIIIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484195C22BC9DD10042D8BE /* InjectionIIIVC.m */; };
+		0484196022BCB2340042D8BE /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484195F22BCB2340042D8BE /* BaseVC.m */; };
+		0484196422BCC20C0042D8BE /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484196322BCC20C0042D8BE /* MasonryVC.m */; };
+		0484196822BCC8440042D8BE /* UITableViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484196722BCC8440042D8BE /* UITableViewDemoVC.m */; };
 		04FEB84922BC7C780030FD7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB84822BC7C780030FD7B /* AppDelegate.m */; };
 		04FEB85122BC7C7A0030FD7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FEB85022BC7C7A0030FD7B /* Assets.xcassets */; };
 		04FEB85422BC7C7A0030FD7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FEB85222BC7C7A0030FD7B /* LaunchScreen.storyboard */; };
@@ -18,7 +21,6 @@
 		04FEB88422BC8BEA0030FD7B /* OneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88322BC8BEA0030FD7B /* OneVC.m */; };
 		04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88722BC8DCD0030FD7B /* BaseTableVC.m */; };
 		04FEB88D22BC902E0030FD7B /* UISwitchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88B22BC902E0030FD7B /* UISwitchVC.m */; };
-		04FEB88E22BC902E0030FD7B /* UISwitchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FEB88C22BC902E0030FD7B /* UISwitchVC.xib */; };
 		B127C3F31FA8173601E49509 /* libPods-Laboratory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C54E56697E211488FC32F2 /* libPods-Laboratory.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,12 @@
 /* Begin PBXFileReference section */
 		0484195B22BC9DD10042D8BE /* InjectionIIIVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InjectionIIIVC.h; sourceTree = "<group>"; };
 		0484195C22BC9DD10042D8BE /* InjectionIIIVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InjectionIIIVC.m; sourceTree = "<group>"; };
+		0484195E22BCB2340042D8BE /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		0484195F22BCB2340042D8BE /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		0484196222BCC20C0042D8BE /* MasonryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
+		0484196322BCC20C0042D8BE /* MasonryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
+		0484196622BCC8440042D8BE /* UITableViewDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewDemoVC.h; sourceTree = "<group>"; };
+		0484196722BCC8440042D8BE /* UITableViewDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewDemoVC.m; sourceTree = "<group>"; };
 		04FEB84422BC7C780030FD7B /* Laboratory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Laboratory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FEB84722BC7C780030FD7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04FEB84822BC7C780030FD7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,7 +72,6 @@
 		04FEB88722BC8DCD0030FD7B /* BaseTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
 		04FEB88A22BC902E0030FD7B /* UISwitchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISwitchVC.h; sourceTree = "<group>"; };
 		04FEB88B22BC902E0030FD7B /* UISwitchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchVC.m; sourceTree = "<group>"; };
-		04FEB88C22BC902E0030FD7B /* UISwitchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UISwitchVC.xib; sourceTree = "<group>"; };
 		04FEB89222BC90D10030FD7B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		14C54E56697E211488FC32F2 /* libPods-Laboratory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Laboratory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		712CC02C133EBDCA1F933881 /* Pods-Laboratory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laboratory.release.xcconfig"; path = "Target Support Files/Pods-Laboratory/Pods-Laboratory.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +111,24 @@
 				0484195C22BC9DD10042D8BE /* InjectionIIIVC.m */,
 			);
 			path = InjectionIIIDemo;
+			sourceTree = "<group>";
+		};
+		0484196122BCC1FF0042D8BE /* MasonryVC */ = {
+			isa = PBXGroup;
+			children = (
+				0484196222BCC20C0042D8BE /* MasonryVC.h */,
+				0484196322BCC20C0042D8BE /* MasonryVC.m */,
+			);
+			path = MasonryVC;
+			sourceTree = "<group>";
+		};
+		0484196522BCC8200042D8BE /* UITableView常规操作 */ = {
+			isa = PBXGroup;
+			children = (
+				0484196622BCC8440042D8BE /* UITableViewDemoVC.h */,
+				0484196722BCC8440042D8BE /* UITableViewDemoVC.m */,
+			);
+			path = "UITableView常规操作";
 			sourceTree = "<group>";
 		};
 		04FEB83B22BC7C780030FD7B = {
@@ -200,7 +225,9 @@
 		04FEB88122BC8BB30030FD7B /* One */ = {
 			isa = PBXGroup;
 			children = (
+				0484196122BCC1FF0042D8BE /* MasonryVC */,
 				0484195A22BC9DBC0042D8BE /* InjectionIIIDemo */,
+				0484196522BCC8200042D8BE /* UITableView常规操作 */,
 				04FEB88922BC901C0030FD7B /* UISwitchVC */,
 				04FEB88222BC8BEA0030FD7B /* OneVC.h */,
 				04FEB88322BC8BEA0030FD7B /* OneVC.m */,
@@ -211,6 +238,8 @@
 		04FEB88522BC8DAC0030FD7B /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
+				0484195E22BCB2340042D8BE /* BaseVC.h */,
+				0484195F22BCB2340042D8BE /* BaseVC.m */,
 				04FEB88622BC8DCD0030FD7B /* BaseTableVC.h */,
 				04FEB88722BC8DCD0030FD7B /* BaseTableVC.m */,
 			);
@@ -222,7 +251,6 @@
 			children = (
 				04FEB88A22BC902E0030FD7B /* UISwitchVC.h */,
 				04FEB88B22BC902E0030FD7B /* UISwitchVC.m */,
-				04FEB88C22BC902E0030FD7B /* UISwitchVC.xib */,
 			);
 			path = UISwitchVC;
 			sourceTree = "<group>";
@@ -348,7 +376,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FEB88E22BC902E0030FD7B /* UISwitchVC.xib in Resources */,
 				04FEB85422BC7C7A0030FD7B /* LaunchScreen.storyboard in Resources */,
 				04FEB85122BC7C7A0030FD7B /* Assets.xcassets in Resources */,
 			);
@@ -401,12 +428,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FEB85722BC7C7A0030FD7B /* main.m in Sources */,
+				0484196822BCC8440042D8BE /* UITableViewDemoVC.m in Sources */,
 				04FEB88422BC8BEA0030FD7B /* OneVC.m in Sources */,
 				0484195D22BC9DD10042D8BE /* InjectionIIIVC.m in Sources */,
+				0484196422BCC20C0042D8BE /* MasonryVC.m in Sources */,
 				04FEB88D22BC902E0030FD7B /* UISwitchVC.m in Sources */,
 				04FEB84922BC7C780030FD7B /* AppDelegate.m in Sources */,
 				04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */,
 				04FEB87E22BC87F10030FD7B /* MainTabBarVC.m in Sources */,
+				0484196022BCB2340042D8BE /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,17 +6,17 @@
 //  Copyright © 2019 mac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseTableVC : UIViewController<UITableViewDataSource, UITableViewDelegate>
-
-@property (nonatomic, strong) UITableView                   *tableView;
-
-@property (nonatomic, strong) NSMutableArray                *mArrData;
+@interface BaseTableVC : BaseVC<UITableViewDataSource, UITableViewDelegate>
 
 
+/**
+ 添加数据后调用此方法加载列表
+ */
+- (void)base_reloadMyTableView;
 
 /**
  添加数据到列表
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param title 标题
  @param detail 详情
  */
-- (void)addDataWithTitle:(NSString *)title andDetail:(NSString *)detail;
+- (void)base_addDataWithTitle:(NSString *)title andDetail:(NSString *)detail;
 
 
 /**
@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param title cell的 title
  */
-- (void)clickCellWithTitle:(NSString *)title;
+- (void)base_clickCellWithTitle:(NSString *)title;
 
 
 /**
@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param pushVC push到的vc
  */
-- (void)fxw_pushVC:(UIViewController *)pushVC;
+- (void)base_pushVC:(UIViewController *)pushVC;
 
 @end
 

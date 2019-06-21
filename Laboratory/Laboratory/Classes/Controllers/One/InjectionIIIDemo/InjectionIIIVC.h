@@ -6,11 +6,11 @@
 //  Copyright © 2019 mac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InjectionIIIVC : UIViewController
+@interface InjectionIIIVC : BaseVC
 
 @end
 

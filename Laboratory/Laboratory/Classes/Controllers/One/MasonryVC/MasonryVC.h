@@ -1,5 +1,5 @@
 //
-//  UISwitchVC.h
+//  MasonryVC.h
 //  Laboratory
 //
 //  Created by mac on 2019/6/21.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UISwitchVC : BaseVC
+@interface MasonryVC : BaseVC
 
 @end
 
