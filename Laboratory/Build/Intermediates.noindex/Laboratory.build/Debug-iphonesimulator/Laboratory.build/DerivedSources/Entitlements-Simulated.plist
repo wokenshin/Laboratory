@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>QZ8P3DHUSD.com.kenshin.Laboratory.Laboratory</string>
+	<string>FAKETEAMID.com.kenshin.Laboratory.Laboratory</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>QZ8P3DHUSD.com.kenshin.Laboratory.Laboratory</string>
+		<string>FAKETEAMID.com.kenshin.Laboratory.Laboratory</string>
 	</array>
 </dict>
 </plist>

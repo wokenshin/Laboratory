@@ -67,7 +67,6 @@
         return;
     }
    
-    
     NSLog(@"%@ 没有这个cell !!!", [self class]);
     
 }
