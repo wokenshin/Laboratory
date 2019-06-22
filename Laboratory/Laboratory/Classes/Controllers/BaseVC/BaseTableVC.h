@@ -34,7 +34,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)baseTableVC_addDataWithTitle:(NSString *)title andDetail:(NSString *)detail;
 
-
 /**
  cell被点击的时候会调用该方法，子类通过重写该方法来实现监听
  
