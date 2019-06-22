@@ -36,17 +36,6 @@
     
 }
 
-- (void)base_reloadMyTableView{
-    [_tableView reloadData];
-}
-
-- (void)base_addDataWithTitle:(NSString *)title andDetail:(NSString *)detail{
-    NSMutableDictionary *mDic = [[NSMutableDictionary alloc] init];
-    [mDic setObject:title  forKey:@"title"];
-    [mDic setObject:detail forKey:@"detail"];
-    [self.mArrData addObject:mDic];
-    
-}
 
 #pragma mark UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -80,11 +69,23 @@
     
     NSDictionary *dic = [self.mArrData objectAtIndex:indexPath.row];
     NSString *title   = [dic objectForKey:@"title"];
-    [self base_clickCellWithTitle:title];
+    [self baseTableVC_clickCellWithTitle:title];
 }
 
 //cell 被点击的时候会调用该方法
-- (void)base_clickCellWithTitle:(NSString *)title{}
+- (void)baseTableVC_clickCellWithTitle:(NSString *)title{}
+
+- (void)baseTableVC_reloadMyTableView{
+    [_tableView reloadData];
+}
+
+- (void)baseTableVC_addDataWithTitle:(NSString *)title andDetail:(NSString *)detail{
+    NSMutableDictionary *mDic = [[NSMutableDictionary alloc] init];
+    [mDic setObject:title  forKey:@"title"];
+    [mDic setObject:detail forKey:@"detail"];
+    [self.mArrData addObject:mDic];
+    
+}
 
 #pragma mark 懒加载
 - (NSMutableArray *)mArrData{
@@ -94,10 +95,6 @@
     return _mArrData;
 }
 
-- (void)base_pushVC:(UIViewController *)pushVC{
-    pushVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:pushVC animated:YES];
-}
 
 
 @end

@@ -10,13 +10,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseTableVC : BaseVC<UITableViewDataSource, UITableViewDelegate>
 
+/**
+ 本控制器就是封装了一个默认TableView 带箭头的列表
+ 
+ 使用说明
+ 1.添加数据：- (void)base_addDataWithTitle:(NSString *)title andDetail:(NSString *)detail;
+ 2.加载数据：- (void)base_reloadMyTableView;
+ 3.重写点击事件方法：- (void)base_clickCellWithTitle:(NSString *)title;
+ */
+@interface BaseTableVC : BaseVC<UITableViewDataSource, UITableViewDelegate>
 
 /**
  添加数据后调用此方法加载列表
  */
-- (void)base_reloadMyTableView;
+- (void)baseTableVC_reloadMyTableView;
 
 /**
  添加数据到列表
@@ -24,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param title 标题
  @param detail 详情
  */
-- (void)base_addDataWithTitle:(NSString *)title andDetail:(NSString *)detail;
+- (void)baseTableVC_addDataWithTitle:(NSString *)title andDetail:(NSString *)detail;
 
 
 /**
@@ -32,15 +40,9 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param title cell的 title
  */
-- (void)base_clickCellWithTitle:(NSString *)title;
+- (void)baseTableVC_clickCellWithTitle:(NSString *)title;
 
 
-/**
- push
- 
- @param pushVC push到的vc
- */
-- (void)base_pushVC:(UIViewController *)pushVC;
 
 @end
 

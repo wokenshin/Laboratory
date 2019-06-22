@@ -29,4 +29,9 @@
 {
     NSLog(@"-------->>>释放了:%@ ", NSStringFromClass([self class]));
 }
+
+- (void)base_pushVC:(UIViewController *)pushVC{
+    pushVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:pushVC animated:YES];
+}
 @end

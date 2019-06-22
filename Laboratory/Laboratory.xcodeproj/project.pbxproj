@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		04FEB88422BC8BEA0030FD7B /* OneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88322BC8BEA0030FD7B /* OneVC.m */; };
 		04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88722BC8DCD0030FD7B /* BaseTableVC.m */; };
 		04FEB88D22BC902E0030FD7B /* UISwitchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88B22BC902E0030FD7B /* UISwitchVC.m */; };
+		9DBE576122BE2A5600B68329 /* CLanguageBaseContentVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE576022BE2A5600B68329 /* CLanguageBaseContentVC.mm */; };
 		B127C3F31FA8173601E49509 /* libPods-Laboratory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C54E56697E211488FC32F2 /* libPods-Laboratory.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,8 @@
 		04FEB89222BC90D10030FD7B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		14C54E56697E211488FC32F2 /* libPods-Laboratory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Laboratory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		712CC02C133EBDCA1F933881 /* Pods-Laboratory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laboratory.release.xcconfig"; path = "Target Support Files/Pods-Laboratory/Pods-Laboratory.release.xcconfig"; sourceTree = "<group>"; };
+		9DBE575F22BE2A5600B68329 /* CLanguageBaseContentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLanguageBaseContentVC.h; sourceTree = "<group>"; };
+		9DBE576022BE2A5600B68329 /* CLanguageBaseContentVC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CLanguageBaseContentVC.mm; sourceTree = "<group>"; };
 		C05A8566ACF6875C00950D1A /* Pods-Laboratory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laboratory.debug.xcconfig"; path = "Target Support Files/Pods-Laboratory/Pods-Laboratory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +228,7 @@
 		04FEB88122BC8BB30030FD7B /* One */ = {
 			isa = PBXGroup;
 			children = (
+				9DBE575E22BE2A1500B68329 /* C语言基础-Runtime */,
 				0484196122BCC1FF0042D8BE /* MasonryVC */,
 				0484195A22BC9DBC0042D8BE /* InjectionIIIDemo */,
 				0484196522BCC8200042D8BE /* UITableView常规操作 */,
@@ -264,6 +268,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9DBE575E22BE2A1500B68329 /* C语言基础-Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				9DBE575F22BE2A5600B68329 /* CLanguageBaseContentVC.h */,
+				9DBE576022BE2A5600B68329 /* CLanguageBaseContentVC.mm */,
+			);
+			path = "C语言基础-Runtime";
+			sourceTree = "<group>";
+		};
 		DD889062E845B1544FA841B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +296,7 @@
 				04FEB84022BC7C780030FD7B /* Sources */,
 				04FEB84122BC7C780030FD7B /* Frameworks */,
 				04FEB84222BC7C780030FD7B /* Resources */,
+				4554EB77C412907E59BAF9A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -398,6 +412,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4554EB77C412907E59BAF9A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Laboratory/Pods-Laboratory-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Laboratory/Pods-Laboratory-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Laboratory/Pods-Laboratory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D080F514EA994938F6E62651 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,6 +466,7 @@
 				04FEB88D22BC902E0030FD7B /* UISwitchVC.m in Sources */,
 				04FEB84922BC7C780030FD7B /* AppDelegate.m in Sources */,
 				04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */,
+				9DBE576122BE2A5600B68329 /* CLanguageBaseContentVC.mm in Sources */,
 				04FEB87E22BC87F10030FD7B /* MainTabBarVC.m in Sources */,
 				0484196022BCB2340042D8BE /* BaseVC.m in Sources */,
 			);
