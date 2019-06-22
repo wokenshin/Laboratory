@@ -2,13 +2,5 @@ platform :ios, '9.0'
 target 'Laboratory' do
 # 我是注释
 
-pod 'AFNetworking'
 pod 'Masonry'
-pod 'MJRefresh'
-pod 'MJExtension'
-pod 'SDWebImage'
-pod 'MBProgressHUD'
-pod 'IQKeyboardManager'
-pod 'WRNavigationBar'
-pod 'FMDB'
 end

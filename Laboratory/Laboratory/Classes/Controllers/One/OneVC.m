@@ -66,9 +66,8 @@
         [self base_pushVC:vc];
         return;
     }
-   
-    NSLog(@"%@ 没有这个cell !!!", [self class]);
     
+    NSLog(@"%@ 没有这个cell !!!", [self class]);
 }
 
 
