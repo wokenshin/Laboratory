@@ -22,9 +22,30 @@ struct Student {
     Student(){
         no = 114;
         strcpy(name, "kenshin");//数组的一种赋值方式
-        age = new int(20);
+        age = new int(20);//分配int型空间 放入20
     }
 };
+
+//定义一个Student1结构体 继承于 Student
+struct Student1:Student{
+    
+};
+
+//定义一个结构体变量Student2
+struct:Student{
+    
+}stu2;//这里的stu2 是变量名 上面定义的结构体都省略了变量名
+
+//定义一个Student3结构体和一个结构体变量stu3
+struct Student3:Student {
+    
+}stu3;
+
+//定义一个结构体Student4 并e给它取别名
+typedef struct Student4:Student{
+    
+}Stu4;//这里的Stu4 就是这个结构体Student4的别名
+
 @interface CLanguageBaseContentVC ()
 
 @end
@@ -121,6 +142,7 @@ struct Student {
     }
     if ([title isEqualToString:@"结构体"]) {
         //在本VC顶部定义了结构体，由于使用了C++语法，所以将本文件名后最改成了 .mm
+        
         
         return;
     }
