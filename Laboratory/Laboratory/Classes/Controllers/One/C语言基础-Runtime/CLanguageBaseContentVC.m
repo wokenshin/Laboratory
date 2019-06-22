@@ -91,6 +91,9 @@
         printf("打印px的内存地址 &px == %p\n", &px);
         printf("所以指针的地址 和指针的值 其实是两个概念，地址是保存自己变量的位置，值是保存的另外一个内存地址");
         return;
+        
+        
+        
     }
     if ([title isEqualToString:@"指针的指针"]) {
         //相当于链表的形式： ppa--->pa--->a   这里的ppa就是指针pa的指针。而pa指针又指向了a
