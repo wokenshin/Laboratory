@@ -17,6 +17,9 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    
+    _mArrData = [[NSMutableArray alloc] init];
+    
     _tableView = [[UITableView alloc] init];
     _tableView.backgroundColor = [UIColor whiteColor];
     _tableView.dataSource = self;
@@ -85,14 +88,6 @@
     [mDic setObject:detail forKey:@"detail"];
     [self.mArrData addObject:mDic];
     
-}
-
-#pragma mark 懒加载
-- (NSMutableArray *)mArrData{
-    if (_mArrData == nil){
-        _mArrData = [[NSMutableArray alloc] init];
-    }
-    return _mArrData;
 }
 
 
