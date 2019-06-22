@@ -24,11 +24,13 @@
     NSLog(@"-------->>>当前控制器是:%@ ", NSStringFromClass([self class]));
 }
 
-
 - (void)dealloc
 {
     NSLog(@"-------->>>释放了:%@ ", NSStringFromClass([self class]));
 }
+
+
+
 
 - (void)base_pushVC:(UIViewController *)pushVC{
     pushVC.hidesBottomBarWhenPushed = YES;
