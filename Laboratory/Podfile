@@ -3,4 +3,5 @@ target 'Laboratory' do
 # 我是注释
 
 pod 'Masonry'
+pod 'MLeaksFinder', '~> 1.0.0'
 end

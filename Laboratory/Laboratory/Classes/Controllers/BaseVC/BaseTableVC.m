@@ -18,24 +18,6 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    _mArrData = [[NSMutableArray alloc] init];
-    
-    _tableView = [[UITableView alloc] init];
-    _tableView.backgroundColor = [UIColor whiteColor];
-    _tableView.dataSource = self;
-    _tableView.delegate   = self;
-    
-    //隐藏多余遇分割线【注释掉 可看效果】
-    UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
-    [_tableView setTableFooterView:v];
-    
-    [self.view addSubview:_tableView];
-    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.mas_topLayoutGuide);//导航栏底部
-        make.left.mas_equalTo(0);
-        make.right.mas_equalTo(0);
-        make.bottom.equalTo(self.mas_bottomLayoutGuide);//UITabbar顶部 这样底部就不会被遮挡了
-    }];
     
 }
 
@@ -79,6 +61,24 @@
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{}
 
 - (void)baseTableVC_reloadMyTableView{
+    if (_tableView == nil) {
+        _tableView = [[UITableView alloc] init];
+        _tableView.backgroundColor = [UIColor whiteColor];
+        _tableView.dataSource = self;
+        _tableView.delegate   = self;
+        
+        //隐藏多余遇分割线【注释掉 可看效果】
+        UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
+        [_tableView setTableFooterView:v];
+        
+        [self.view addSubview:_tableView];
+        [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.mas_topLayoutGuide);//导航栏底部
+            make.left.mas_equalTo(0);
+            make.right.mas_equalTo(0);
+            make.bottom.equalTo(self.mas_bottomLayoutGuide);//UITabbar顶部 这样底部就不会被遮挡了
+        }];
+    }
     [_tableView reloadData];
 }
 
@@ -90,6 +90,11 @@
     
 }
 
-
+- (NSMutableArray *)mArrData{
+    if (_mArrData == nil) {
+        _mArrData = [[NSMutableArray alloc] init];
+    }
+    return _mArrData;
+}
 
 @end

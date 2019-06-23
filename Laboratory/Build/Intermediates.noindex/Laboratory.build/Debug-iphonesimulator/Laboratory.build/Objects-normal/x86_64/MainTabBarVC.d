@@ -19,4 +19,5 @@ dependencies: \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/MainTabBarVC.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/One/OneVC.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/BaseVC/BaseTableVC.h \
-  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/BaseVC/BaseVC.h
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/BaseVC/BaseVC.h \
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/TwoVC.h

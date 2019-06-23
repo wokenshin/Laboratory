@@ -12,6 +12,7 @@
 #import "MasonryVC.h"
 #import "UITableViewDemoVC.h"
 #import "CLanguageBaseContentVC.h"
+#import "RuntimeMKWVC.h"
 
 
 @interface OneVC ()
@@ -33,11 +34,12 @@
     [self baseTableVC_addDataWithTitle:@"Masonry 常用代码" andDetail:@"2019.6.21"];
     [self baseTableVC_addDataWithTitle:@"UISwitch" andDetail:@"2019.6.21"];
     [self baseTableVC_addDataWithTitle:@"C语言基础部分 为了学习Runtime" andDetail:@"2019.6.22"];
+    [self baseTableVC_addDataWithTitle:@"Runtime" andDetail:@"2019.6.23"];
     
-    [self baseTableVC_addDataWithTitle:@"SDWebImage 常用代码" andDetail:@""];
-    [self baseTableVC_addDataWithTitle:@"模型字典转换" andDetail:@""];
-    [self baseTableVC_addDataWithTitle:@"根据字典生成模型文件" andDetail:@""];
-    [self baseTableVC_addDataWithTitle:@"UITableView 常规操作" andDetail:@""];
+//    [self baseTableVC_addDataWithTitle:@"SDWebImage 常用代码" andDetail:@""];
+//    [self baseTableVC_addDataWithTitle:@"模型字典转换" andDetail:@""];
+//    [self baseTableVC_addDataWithTitle:@"根据字典生成模型文件" andDetail:@""];
+//    [self baseTableVC_addDataWithTitle:@"UITableView 常规操作" andDetail:@""];
 }
 
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
@@ -63,6 +65,11 @@
     }
     if ([title isEqualToString:@"UITableView 常规操作"]) {
         UITableViewDemoVC *vc = [[UITableViewDemoVC alloc] init];
+        [self base_pushVC:vc];
+        return;
+    }
+    if ([title isEqualToString:@"Runtime"]) {
+        RuntimeMKWVC *vc = [[RuntimeMKWVC alloc] init];
         [self base_pushVC:vc];
         return;
     }

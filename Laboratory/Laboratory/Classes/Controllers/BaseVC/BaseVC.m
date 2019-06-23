@@ -21,12 +21,12 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    NSLog(@"-------->>>当前控制器是:%@ ", NSStringFromClass([self class]));
+    FXWLog(@"-------->>>当前控制器是:%@ ", NSStringFromClass([self class]));
 }
 
 - (void)dealloc
 {
-    NSLog(@"-------->>>释放了:%@ ", NSStringFromClass([self class]));
+    FXWLog(@"-------->>>释放了:%@ ", NSStringFromClass([self class]));
 }
 
 

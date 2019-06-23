@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		2lVd4ettPMIie6rAW4LM2qMj9F0=
+		LvgoD3gezBQURpBcax4Ld2mVpfI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		n2Eqh58Pd+fe0GYQG1Z7NEIED2U=
+		j9Rfit7tZmR7EsREhXpWD8yynxI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,78 +18,19 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		x4wD8ISkVqaUvainFGU0andF/Ho=
-		</data>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowDown@2x.png</key>
-		<data>
-		E5PiMFtkr0ZmN8MxNrxc2l+sWqo=
-		</data>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowDown@3x.png</key>
-		<data>
-		4qk8zwoPP/Hr3/PMu+pXpZndyoI=
-		</data>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowLeft@2x.png</key>
-		<data>
-		FEV/+WMMqefzlnhy+R+VDCwm2LI=
-		</data>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowLeft@3x.png</key>
-		<data>
-		0ty6z7Lc+DVv6EbMb17x6wBO1FI=
-		</data>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowRight@2x.png</key>
-		<data>
-		gOrv0ek+tTv+38A1fsImH29pPmQ=
-		</data>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowRight@3x.png</key>
-		<data>
-		4M1rDWOTRrCoNp/ODMQ4NeCEAM4=
-		</data>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowUp@2x.png</key>
-		<data>
-		6/zeTZLnkYxSzfRaVZqa4FjuWAc=
-		</data>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowUp@3x.png</key>
-		<data>
-		2FGtDJvOI/LkviaOmF9z3/4/rU4=
+		HSGxCs5jbUsQ4HOPF8bUrgUkTHY=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		FlvRiz2Vy8X01m1nL83hb2WhgcI=
 		</data>
-		<key>MJRefresh.bundle/arrow@2x.png</key>
-		<data>
-		5ZENFuDcEgHjDuL7tn7h97HeuSE=
-		</data>
-		<key>MJRefresh.bundle/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+MqdSIQkOmft3feFB6CbJQkGr7c=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>MJRefresh.bundle/zh-Hans.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DD5bNeaUTksFP2PkSNtokoJkKjU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>MJRefresh.bundle/zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hjIzn4qLs8xLMnelxOeMouDSaZY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>README</key>
+		<data>
+		xWNMiIcDXUkZWG3LQ30YUHr6xow=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -98,22 +39,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2lVd4ettPMIie6rAW4LM2qMj9F0=
+			LvgoD3gezBQURpBcax4Ld2mVpfI=
 			</data>
 			<key>hash2</key>
 			<data>
-			5FrNg6c1UGywJaoVubrAR/5zC8T1ZXfk99uG0SVlyZA=
+			nuMQqA4gD0tjhWCApybJ7pHht6y+qSv6xDWYwKZFNnU=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n2Eqh58Pd+fe0GYQG1Z7NEIED2U=
+			j9Rfit7tZmR7EsREhXpWD8yynxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			4jjbazhyKzMt/1skx8u9GS+bQ2GJVQMQQebQrO7nCt0=
+			rZFELc/bxk2BfCy+F7lm01vT1Uh686VlVlavOnGVCqE=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -131,150 +72,23 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x4wD8ISkVqaUvainFGU0andF/Ho=
+			HSGxCs5jbUsQ4HOPF8bUrgUkTHY=
 			</data>
 			<key>hash2</key>
 			<data>
-			9omOBl8ZgeBGOPfFf+l0FDtHv1gYU30/hvpL2QLvkYY=
+			JS9i/JVcILls7+B1kaeH9Y/IWEChjMWBZ28tlzNat0A=
 			</data>
 		</dict>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowDown@2x.png</key>
+		<key>README</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E5PiMFtkr0ZmN8MxNrxc2l+sWqo=
+			xWNMiIcDXUkZWG3LQ30YUHr6xow=
 			</data>
 			<key>hash2</key>
 			<data>
-			h/9hC+664YiphHIfNIxMWY4yL3xxTy/odnrY1bKCxkw=
+			w16RKRHxjm9leqQEZsuWWBvkM6JfrmHiIDsPGfQjSu0=
 			</data>
-		</dict>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowDown@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4qk8zwoPP/Hr3/PMu+pXpZndyoI=
-			</data>
-			<key>hash2</key>
-			<data>
-			Slj1H5d6wCG/SKY+GpqQlDAR/96W6To/tdhGSvYXFt0=
-			</data>
-		</dict>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowLeft@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FEV/+WMMqefzlnhy+R+VDCwm2LI=
-			</data>
-			<key>hash2</key>
-			<data>
-			awBt50hVmNGyePSLBYZzTCvyTZgXpi7YDu6L7UyS53Y=
-			</data>
-		</dict>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowLeft@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0ty6z7Lc+DVv6EbMb17x6wBO1FI=
-			</data>
-			<key>hash2</key>
-			<data>
-			IiKVdDiE/LEQzMH9eHqQVlo6CGZfrsW/OT/n+/KzCHk=
-			</data>
-		</dict>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowRight@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gOrv0ek+tTv+38A1fsImH29pPmQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			YWxGn20RL2/1XhKnQIc2kTl+0H50DQ+BqxZ+HTReBoE=
-			</data>
-		</dict>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowRight@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4M1rDWOTRrCoNp/ODMQ4NeCEAM4=
-			</data>
-			<key>hash2</key>
-			<data>
-			YqYHh7YYvrvLod2iNkX2ja8Uv4W5I2qx8HwBmA3C7EM=
-			</data>
-		</dict>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowUp@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6/zeTZLnkYxSzfRaVZqa4FjuWAc=
-			</data>
-			<key>hash2</key>
-			<data>
-			m8wHarn1PYnWvYZhVvBtr5y8clhpWJGX5qrwrHrpsQQ=
-			</data>
-		</dict>
-		<key>IQKeyboardManager.bundle/IQButtonBarArrowUp@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2FGtDJvOI/LkviaOmF9z3/4/rU4=
-			</data>
-			<key>hash2</key>
-			<data>
-			mHgGzwRHbt8d8nUQ3O4sJDpFOCYNM1Lmp9v9bNPk2ek=
-			</data>
-		</dict>
-		<key>MJRefresh.bundle/arrow@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5ZENFuDcEgHjDuL7tn7h97HeuSE=
-			</data>
-			<key>hash2</key>
-			<data>
-			5pZTVM6xOoz5TmObI4Nq10XxwWgOr9sM2We8r8FZAYg=
-			</data>
-		</dict>
-		<key>MJRefresh.bundle/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+MqdSIQkOmft3feFB6CbJQkGr7c=
-			</data>
-			<key>hash2</key>
-			<data>
-			k6E422M45vEs2p2syr9FCVwZCX4z6gPz1FP6ktwFhV0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>MJRefresh.bundle/zh-Hans.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DD5bNeaUTksFP2PkSNtokoJkKjU=
-			</data>
-			<key>hash2</key>
-			<data>
-			5c2ENj+vfMLxJOnUypY2dhJ3O8hGg7P3PaWrgwX+G0I=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>MJRefresh.bundle/zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hjIzn4qLs8xLMnelxOeMouDSaZY=
-			</data>
-			<key>hash2</key>
-			<data>
-			AteA9vw+ofnahB0RNbonkmUulQC5Co8UvNf/1MwU7a4=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

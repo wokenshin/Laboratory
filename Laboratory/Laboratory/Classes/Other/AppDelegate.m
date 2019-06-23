@@ -21,7 +21,7 @@
     
     
 #if DEBUG
-    //  - (void)injected
+    //一种高效调试方式 参考:https://www.jianshu.com/p/b2a2f15a3283
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
 #endif
     return YES;

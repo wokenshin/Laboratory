@@ -8,6 +8,7 @@
 
 #import "MainTabBarVC.h"
 #import "OneVC.h"
+#import "TwoVC.h"
 
 @implementation MainTabBarVC
 
@@ -24,17 +25,22 @@
     self.hidesBottomBarWhenPushed = NO;
     
     OneVC *oneVC = [[OneVC alloc] init];
+    TwoVC *twoVC = [[TwoVC alloc] init];
     
-    //返回四个导航控制器
+    //返回导航控制器
     UINavigationController *nav1 = [self subNavOfTabBarVCWith:@"实验"
                                                     viewController:oneVC
                                                          imageName:@"wb_home"
                                                  selectedImageName:@"wb_home_selected"];
     
+    UINavigationController *nav2 = [self subNavOfTabBarVCWith:@"面试"
+                                               viewController:twoVC
+                                                    imageName:@"wb_profile"
+                                            selectedImageName:@"wb_profile_selected"];
     
     
-    //设置TabBarVC的四个子控制器
-    self.viewControllers = [NSArray arrayWithObjects:nav1, nil];
+    //设置TabBarVC的子控制器
+    self.viewControllers = [NSArray arrayWithObjects:nav1, nav2, nil];
     
 }
 
