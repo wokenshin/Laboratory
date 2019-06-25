@@ -3,13 +3,21 @@
 
 
 1.整理代码段 高效开发【将定义好的代码段放到本工程文件中，共享到自己和工作的Xcode上】
+通过下面的路径可以找到断码断的设置文件
+~/Library/Developer/Xcode/UserData/CodeSnippets
+
 属性
-UI
+UI tableview 
 block
 gcd
 Masonry等 都可以定义代码段
 协议
-
+通知
+沙盒
+获取沙盒路径
+定时器
+手势
+动画
 
 2.宏定义
 log
