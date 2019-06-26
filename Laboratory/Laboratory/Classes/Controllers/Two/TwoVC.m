@@ -11,6 +11,7 @@
 #import "KVODemoVC.h"
 #import "RuntimeObject.h"
 #import "TimerCircleVC.h"
+#import "MSVC.h"
 
 @interface TwoVC()
 @property (nonatomic, copy) NSMutableArray *mArr;
@@ -35,9 +36,17 @@
     [self baseTableVC_addDataWithTitle:@"runtime Method Swizzling" andDetail:@"2019.6.25"];
     [self baseTableVC_addDataWithTitle:@"runtime 动态添加方法" andDetail:@"2019.6.25"];
     [self baseTableVC_addDataWithTitle:@"循环引用之Timer" andDetail:@"2019.6.26"];
+    [self baseTableVC_addDataWithTitle:@"block 截获" andDetail:@"2019.6.26"];
+    [self baseTableVC_addDataWithTitle:@"block __blcok" andDetail:@"2019.6.26"];
+    [self baseTableVC_addDataWithTitle:@"多线程" andDetail:@"2019.6.26"];
 }
 
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
+    if ([title isEqualToString:@"多线程"]) {
+        MSVC *vc = [[MSVC alloc] init];
+        [self base_pushVC:vc];
+        return;
+    }
     if ([title isEqualToString:@"UITableView重用"]) {
         IndexedBarVC *vc = [[IndexedBarVC alloc] init];
         [self base_pushVC:vc];
@@ -80,9 +89,34 @@
         [self base_pushVC:vc];
         return;
     }
+    if ([title isEqualToString:@"block 截获"]) {
+        int var = 6;
+        int(^Block)(int) = ^int(int num){
+            return num*var;
+        };
+        var = 4;//由于局部变量基本数据类型 block内部截获是重新声明了一个和截获是一模一样的变量，所以这里的修改其实并不会影响block内部“复制”的变量值
+        FXWLog(@"Block resulit is %d", Block(2));
+        
+        static int a = 10;
+        int(^BlockStatic)(int) = ^int(int num){
+            return num*a;
+        };
+        a = 20;//由于静态变量在block内部截获时获取的是静态变量的指针地址，所以这里的修改是会生效的，block内部和外面使用的是通一个变量
+        FXWLog(@"BlockStatic resulit is %d", BlockStatic(2));
+        return;
+    }
+    if ([title isEqualToString:@"block __blcok"]) {
+        //注意！！！ 当使用__block的时候外界的修改就会影响截获后block的值了
+        __block int var2 = 6;
+        int(^Block2)(int) = ^int(int num){
+            return num*var2;
+        };
+        var2 = 4;//这里有雨变量被__block修饰 所以下面的输出是8
+        FXWLog(@"Block2 resulit is %d", Block2(2));
+        return;
+    }
     FXWLog(@"没有找到对应选项！！！");
     
 }
-
 
 @end
