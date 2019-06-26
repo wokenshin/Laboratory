@@ -22,6 +22,8 @@
 		04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88722BC8DCD0030FD7B /* BaseTableVC.m */; };
 		04FEB88D22BC902E0030FD7B /* UISwitchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88B22BC902E0030FD7B /* UISwitchVC.m */; };
 		9D2E4AA622C236E100DEB898 /* RuntimeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2E4AA422C236E100DEB898 /* RuntimeObject.m */; };
+		9D9890FE22C32BCC00CC595C /* NSTimer+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9890FD22C32BCC00CC595C /* NSTimer+FXW.m */; };
+		9D98910622C3313B00CC595C /* TimerCircleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D98910522C3313B00CC595C /* TimerCircleVC.m */; };
 		9DA1EC1822C122D900F01F31 /* KVODemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1EC1722C122D900F01F31 /* KVODemoVC.m */; };
 		9DA1EC1D22C122E800F01F31 /* MObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1EC1922C122E700F01F31 /* MObject.m */; };
 		9DA1EC1E22C122E800F01F31 /* MObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1EC1B22C122E700F01F31 /* MObserver.m */; };
@@ -88,6 +90,10 @@
 		712CC02C133EBDCA1F933881 /* Pods-Laboratory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laboratory.release.xcconfig"; path = "Target Support Files/Pods-Laboratory/Pods-Laboratory.release.xcconfig"; sourceTree = "<group>"; };
 		9D2E4AA422C236E100DEB898 /* RuntimeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeObject.m; sourceTree = "<group>"; };
 		9D2E4AA522C236E100DEB898 /* RuntimeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeObject.h; sourceTree = "<group>"; };
+		9D9890FC22C32BCC00CC595C /* NSTimer+FXW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FXW.h"; sourceTree = "<group>"; };
+		9D9890FD22C32BCC00CC595C /* NSTimer+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FXW.m"; sourceTree = "<group>"; };
+		9D98910422C3313B00CC595C /* TimerCircleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerCircleVC.h; sourceTree = "<group>"; };
+		9D98910522C3313B00CC595C /* TimerCircleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerCircleVC.m; sourceTree = "<group>"; };
 		9DA1EC1622C122D900F01F31 /* KVODemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVODemoVC.h; sourceTree = "<group>"; };
 		9DA1EC1722C122D900F01F31 /* KVODemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVODemoVC.m; sourceTree = "<group>"; };
 		9DA1EC1922C122E700F01F31 /* MObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MObject.m; sourceTree = "<group>"; };
@@ -252,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				04FEB88022BC88C50030FD7B /* FXW_Define.h */,
+				9D9890FB22C32BB700CC595C /* Category */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -309,6 +316,24 @@
 			path = "Runtime消息转发流程";
 			sourceTree = "<group>";
 		};
+		9D9890FB22C32BB700CC595C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9D9890FC22C32BCC00CC595C /* NSTimer+FXW.h */,
+				9D9890FD22C32BCC00CC595C /* NSTimer+FXW.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9D98910322C330C600CC595C /* Timer循环引用 */ = {
+			isa = PBXGroup;
+			children = (
+				9D98910422C3313B00CC595C /* TimerCircleVC.h */,
+				9D98910522C3313B00CC595C /* TimerCircleVC.m */,
+			);
+			path = "Timer循环引用";
+			sourceTree = "<group>";
+		};
 		9DA1EC1522C122C700F01F31 /* KVO */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +368,7 @@
 		9DF4379222BFD80500F6459B /* Two */ = {
 			isa = PBXGroup;
 			children = (
+				9D98910322C330C600CC595C /* Timer循环引用 */,
 				9D2E4AA322C236C500DEB898 /* Runtime消息转发流程 */,
 				9DA1EC1522C122C700F01F31 /* KVO */,
 				9DF4379622BFDB3E00F6459B /* UITableView相关面试问题 */,
@@ -541,6 +567,7 @@
 				9DF437A022BFE1DE00F6459B /* IndexedTableView.m in Sources */,
 				9DC4C29A22BF63FF00C4D35F /* RuntimeMKWVC.m in Sources */,
 				0484196822BCC8440042D8BE /* UITableViewDemoVC.m in Sources */,
+				9D98910622C3313B00CC595C /* TimerCircleVC.m in Sources */,
 				9DF4379F22BFE1DE00F6459B /* ViewReusePool.m in Sources */,
 				04FEB88422BC8BEA0030FD7B /* OneVC.m in Sources */,
 				9DA1EC1E22C122E800F01F31 /* MObserver.m in Sources */,
@@ -553,6 +580,7 @@
 				9D2E4AA622C236E100DEB898 /* RuntimeObject.m in Sources */,
 				04FEB84922BC7C780030FD7B /* AppDelegate.m in Sources */,
 				04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */,
+				9D9890FE22C32BCC00CC595C /* NSTimer+FXW.m in Sources */,
 				9DBE576122BE2A5600B68329 /* CLanguageBaseContentVC.mm in Sources */,
 				04FEB87E22BC87F10030FD7B /* MainTabBarVC.m in Sources */,
 				9DA1EC1D22C122E800F01F31 /* MObject.m in Sources */,

@@ -10,6 +10,7 @@
 #import "IndexedBarVC.h"
 #import "KVODemoVC.h"
 #import "RuntimeObject.h"
+#import "TimerCircleVC.h"
 
 @interface TwoVC()
 @property (nonatomic, copy) NSMutableArray *mArr;
@@ -33,7 +34,7 @@
     [self baseTableVC_addDataWithTitle:@"runtime 消息转发流程" andDetail:@"2019.6.25"];
     [self baseTableVC_addDataWithTitle:@"runtime Method Swizzling" andDetail:@"2019.6.25"];
     [self baseTableVC_addDataWithTitle:@"runtime 动态添加方法" andDetail:@"2019.6.25"];
-    
+    [self baseTableVC_addDataWithTitle:@"循环引用之Timer" andDetail:@"2019.6.26"];
 }
 
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
@@ -74,8 +75,14 @@
         [obj meiyouwo];//.m文件中没有此方法的实现，使用动态添加方法的方式，为此方法的实现指定了新的方法
         return;
     }
+    if ([title isEqualToString:@"循环引用之Timer"]) {
+        TimerCircleVC *vc = [[TimerCircleVC alloc] init];
+        [self base_pushVC:vc];
+        return;
+    }
     FXWLog(@"没有找到对应选项！！！");
     
 }
+
 
 @end

@@ -21,4 +21,5 @@ dependencies: \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/BaseVC/BaseVC.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/UITableView相关面试问题/IndexedBar/IndexedBarVC.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/KVO/KVODemoVC.h \
-  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/Runtime消息转发流程/RuntimeObject.h
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/Runtime消息转发流程/RuntimeObject.h \
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/Timer循环引用/TimerCircleVC.h
