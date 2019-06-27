@@ -8,9 +8,10 @@
 
 #import "UITableViewDemoVC.h"
 
-@interface UITableViewDemoVC ()<UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic,strong)UITableView              *tableView;
-@property (nonatomic,strong)NSMutableArray       *mArrTableViewData;
+@interface UITableViewDemoVC ()
+////<UITableViewDataSource, UITableViewDelegate>
+//@property (nonatomic,strong)UITableView              *tableView;
+//@property (nonatomic,strong)NSMutableArray       *mArrTableViewData;
 @end
 
 @implementation UITableViewDemoVC

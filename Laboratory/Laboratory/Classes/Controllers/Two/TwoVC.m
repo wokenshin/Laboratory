@@ -12,6 +12,7 @@
 #import "RuntimeObject.h"
 #import "TimerCircleVC.h"
 #import "MSVC.h"
+#import "AlgorithmVC.h"
 
 @interface TwoVC()
 @property (nonatomic, copy) NSMutableArray *mArr;
@@ -39,9 +40,16 @@
     [self baseTableVC_addDataWithTitle:@"block 截获" andDetail:@"2019.6.26"];
     [self baseTableVC_addDataWithTitle:@"block __blcok" andDetail:@"2019.6.26"];
     [self baseTableVC_addDataWithTitle:@"多线程" andDetail:@"2019.6.26"];
+    //[self baseTableVC_addDataWithTitle:@"RunLoop 常驻线程" andDetail:@"2019.6.27"];
+    [self baseTableVC_addDataWithTitle:@"算法" andDetail:@"2019.6.27"];
 }
 
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
+    if ([title isEqualToString:@"算法"]) {
+        AlgorithmVC *vc = [[AlgorithmVC alloc] init];
+        [self base_pushVC:vc];
+        return;
+    }
     if ([title isEqualToString:@"多线程"]) {
         MSVC *vc = [[MSVC alloc] init];
         [self base_pushVC:vc];
