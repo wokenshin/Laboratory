@@ -17,4 +17,5 @@ dependencies: \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Other/PrefixHeader.pch \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/One/MasonryVC/MasonryVC.m \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/One/MasonryVC/MasonryVC.h \
-  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/BaseVC/BaseVC.h
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/BaseVC/BaseVC.h \
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/One/MasonryVC/MasonryPriorityVC.h

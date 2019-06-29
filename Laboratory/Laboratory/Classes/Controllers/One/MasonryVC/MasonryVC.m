@@ -7,7 +7,7 @@
 //
 
 #import "MasonryVC.h"
-
+#import "MasonryPriorityVC.h"
 
 /**
  参考:https://www.jianshu.com/p/24e4ff56bfea
@@ -17,6 +17,7 @@
 @interface MasonryVC ()
 @property (nonatomic,strong)UIButton    *btnUpdate;
 @property (nonatomic,strong)UILabel     *labB;
+@property (nonatomic,strong)UIButton    *btnNextPage;
 @property (nonatomic,assign)BOOL          isChange;
 @end
 
@@ -90,6 +91,18 @@
         make.width.mas_equalTo(screenWidth*0.8);
     }];
     
+    _btnNextPage = [[UIButton alloc] init];
+    [_btnNextPage setTitle:@"优先级" forState:UIControlStateNormal];
+    _btnNextPage.backgroundColor = FXW_HEXColor(0x00a062);
+    [_btnNextPage addTarget:self action:@selector(clickBtnNextPage) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_btnNextPage];
+    [_btnNextPage mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(labC.mas_bottom).offset(10);
+        make.centerX.mas_equalTo(0);
+        make.width.mas_equalTo(120);
+        make.height.mas_equalTo(36*2);
+    }];
+    
     
     UILabel *labBotton = [[UILabel alloc] init];
     labBotton.textColor = [UIColor blackColor];
@@ -122,8 +135,9 @@
     }
 }
 
-- (void)injected{
-    
+- (void)clickBtnNextPage{
+    MasonryPriorityVC *vc = [[MasonryPriorityVC alloc] init];
+    [self base_pushVC:vc];
     
 }
 

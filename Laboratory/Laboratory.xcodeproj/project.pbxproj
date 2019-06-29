@@ -22,6 +22,7 @@
 		04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88722BC8DCD0030FD7B /* BaseTableVC.m */; };
 		04FEB88D22BC902E0030FD7B /* UISwitchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88B22BC902E0030FD7B /* UISwitchVC.m */; };
 		9D2E4AA622C236E100DEB898 /* RuntimeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2E4AA422C236E100DEB898 /* RuntimeObject.m */; };
+		9D7F430F22C619DC007D9860 /* MasonryPriorityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F430E22C619DC007D9860 /* MasonryPriorityVC.m */; };
 		9D9890FE22C32BCC00CC595C /* NSTimer+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9890FD22C32BCC00CC595C /* NSTimer+FXW.m */; };
 		9D98910622C3313B00CC595C /* TimerCircleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D98910522C3313B00CC595C /* TimerCircleVC.m */; };
 		9D98910B22C3AE3B00CC595C /* MSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D98910A22C3AE3B00CC595C /* MSVC.m */; };
@@ -94,6 +95,8 @@
 		712CC02C133EBDCA1F933881 /* Pods-Laboratory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laboratory.release.xcconfig"; path = "Target Support Files/Pods-Laboratory/Pods-Laboratory.release.xcconfig"; sourceTree = "<group>"; };
 		9D2E4AA422C236E100DEB898 /* RuntimeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeObject.m; sourceTree = "<group>"; };
 		9D2E4AA522C236E100DEB898 /* RuntimeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeObject.h; sourceTree = "<group>"; };
+		9D7F430D22C619DC007D9860 /* MasonryPriorityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryPriorityVC.h; sourceTree = "<group>"; };
+		9D7F430E22C619DC007D9860 /* MasonryPriorityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryPriorityVC.m; sourceTree = "<group>"; };
 		9D9890FC22C32BCC00CC595C /* NSTimer+FXW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FXW.h"; sourceTree = "<group>"; };
 		9D9890FD22C32BCC00CC595C /* NSTimer+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FXW.m"; sourceTree = "<group>"; };
 		9D98910422C3313B00CC595C /* TimerCircleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerCircleVC.h; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 			children = (
 				0484196222BCC20C0042D8BE /* MasonryVC.h */,
 				0484196322BCC20C0042D8BE /* MasonryVC.m */,
+				9D7F430D22C619DC007D9860 /* MasonryPriorityVC.h */,
+				9D7F430E22C619DC007D9860 /* MasonryPriorityVC.m */,
 			);
 			path = MasonryVC;
 			sourceTree = "<group>";
@@ -619,6 +624,7 @@
 				9D98910B22C3AE3B00CC595C /* MSVC.m in Sources */,
 				9DB05D1522C5147900D1B574 /* AlgorithmVC.m in Sources */,
 				04FEB84922BC7C780030FD7B /* AppDelegate.m in Sources */,
+				9D7F430F22C619DC007D9860 /* MasonryPriorityVC.m in Sources */,
 				04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */,
 				9D9890FE22C32BCC00CC595C /* NSTimer+FXW.m in Sources */,
 				9DBE576122BE2A5600B68329 /* CLanguageBaseContentVC.mm in Sources */,
