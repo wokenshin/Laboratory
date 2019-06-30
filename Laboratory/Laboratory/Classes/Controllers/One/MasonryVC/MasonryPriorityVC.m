@@ -8,6 +8,7 @@
 
 #import "MasonryPriorityVC.h"
 
+//参考：https://www.cnblogs.com/siasyl/p/6775055.html
 @interface MasonryPriorityVC()
 @property (nonatomic, strong) UIButton *btnRemoveCenterView;
 @property (nonatomic, strong) UIButton *btnRemoveRightView;
