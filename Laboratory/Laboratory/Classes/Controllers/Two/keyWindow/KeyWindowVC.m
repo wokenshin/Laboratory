@@ -8,6 +8,7 @@
 
 #import "KeyWindowVC.h"
 
+//参考 https://www.jianshu.com/p/b6964951a6be
 @interface KeyWindowVC ()
 @property (nonatomic, strong) UIButton *btnBad;
 @property (nonatomic, strong) UIButton *btnGood;
@@ -65,7 +66,6 @@
 }
 
 - (void)clickBtnBad{
-    
     // 创建一个alertView
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"错误事例" message:@"在系统弹窗出现【之后】，添加到keyWindow上的视图【会】随着弹窗的消失而消失" delegate:self cancelButtonTitle:@"取消" otherButtonTitles: nil];
     [alertView show];
@@ -97,7 +97,6 @@
     UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 90, 90)];
     redView.backgroundColor = [UIColor redColor];
     [[[[UIApplication sharedApplication] delegate] window] addSubview:redView];
-    
     
 }
 

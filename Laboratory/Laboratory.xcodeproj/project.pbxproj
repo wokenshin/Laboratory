@@ -22,6 +22,12 @@
 		04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88722BC8DCD0030FD7B /* BaseTableVC.m */; };
 		04FEB88D22BC902E0030FD7B /* UISwitchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88B22BC902E0030FD7B /* UISwitchVC.m */; };
 		9D091CDC22CB51460098F4B3 /* MRCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D091CDB22CB51460098F4B3 /* MRCDemo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D17C27F22CCC41F007CDECF /* LOADFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D17C27E22CCC41F007CDECF /* LOADFather.m */; };
+		9D17C28222CCC431007CDECF /* LOADSun.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D17C28122CCC431007CDECF /* LOADSun.m */; };
+		9D17C28522CCC9F9007CDECF /* LOADFather+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D17C28422CCC9F9007CDECF /* LOADFather+A.m */; };
+		9D17C28822CCD1AD007CDECF /* LOADSun+B.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D17C28722CCD1AD007CDECF /* LOADSun+B.m */; };
+		9D17C28B22CCD3C2007CDECF /* LOADSun+B2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D17C28A22CCD3C2007CDECF /* LOADSun+B2.m */; };
+		9D17C28E22CCD3D0007CDECF /* LOADFather+A2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D17C28D22CCD3D0007CDECF /* LOADFather+A2.m */; };
 		9D2E4AA622C236E100DEB898 /* RuntimeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2E4AA422C236E100DEB898 /* RuntimeObject.m */; };
 		9D7F430F22C619DC007D9860 /* MasonryPriorityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F430E22C619DC007D9860 /* MasonryPriorityVC.m */; };
 		9D9890FE22C32BCC00CC595C /* NSTimer+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9890FD22C32BCC00CC595C /* NSTimer+FXW.m */; };
@@ -97,6 +103,18 @@
 		712CC02C133EBDCA1F933881 /* Pods-Laboratory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laboratory.release.xcconfig"; path = "Target Support Files/Pods-Laboratory/Pods-Laboratory.release.xcconfig"; sourceTree = "<group>"; };
 		9D091CDA22CB51460098F4B3 /* MRCDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCDemo.h; sourceTree = "<group>"; };
 		9D091CDB22CB51460098F4B3 /* MRCDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCDemo.m; sourceTree = "<group>"; };
+		9D17C27D22CCC41F007CDECF /* LOADFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LOADFather.h; sourceTree = "<group>"; };
+		9D17C27E22CCC41F007CDECF /* LOADFather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOADFather.m; sourceTree = "<group>"; };
+		9D17C28022CCC431007CDECF /* LOADSun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LOADSun.h; sourceTree = "<group>"; };
+		9D17C28122CCC431007CDECF /* LOADSun.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOADSun.m; sourceTree = "<group>"; };
+		9D17C28322CCC9F9007CDECF /* LOADFather+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOADFather+A.h"; sourceTree = "<group>"; };
+		9D17C28422CCC9F9007CDECF /* LOADFather+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LOADFather+A.m"; sourceTree = "<group>"; };
+		9D17C28622CCD1AD007CDECF /* LOADSun+B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOADSun+B.h"; sourceTree = "<group>"; };
+		9D17C28722CCD1AD007CDECF /* LOADSun+B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LOADSun+B.m"; sourceTree = "<group>"; };
+		9D17C28922CCD3C2007CDECF /* LOADSun+B2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOADSun+B2.h"; sourceTree = "<group>"; };
+		9D17C28A22CCD3C2007CDECF /* LOADSun+B2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LOADSun+B2.m"; sourceTree = "<group>"; };
+		9D17C28C22CCD3D0007CDECF /* LOADFather+A2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOADFather+A2.h"; sourceTree = "<group>"; };
+		9D17C28D22CCD3D0007CDECF /* LOADFather+A2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LOADFather+A2.m"; sourceTree = "<group>"; };
 		9D2E4AA422C236E100DEB898 /* RuntimeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeObject.m; sourceTree = "<group>"; };
 		9D2E4AA522C236E100DEB898 /* RuntimeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeObject.h; sourceTree = "<group>"; };
 		9D7F430D22C619DC007D9860 /* MasonryPriorityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryPriorityVC.h; sourceTree = "<group>"; };
@@ -330,6 +348,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9D17C27C22CCC3E6007CDECF /* 子类父类分类load执行顺序 */ = {
+			isa = PBXGroup;
+			children = (
+				9D17C27D22CCC41F007CDECF /* LOADFather.h */,
+				9D17C27E22CCC41F007CDECF /* LOADFather.m */,
+				9D17C28022CCC431007CDECF /* LOADSun.h */,
+				9D17C28122CCC431007CDECF /* LOADSun.m */,
+				9D17C28322CCC9F9007CDECF /* LOADFather+A.h */,
+				9D17C28422CCC9F9007CDECF /* LOADFather+A.m */,
+				9D17C28C22CCD3D0007CDECF /* LOADFather+A2.h */,
+				9D17C28D22CCD3D0007CDECF /* LOADFather+A2.m */,
+				9D17C28622CCD1AD007CDECF /* LOADSun+B.h */,
+				9D17C28722CCD1AD007CDECF /* LOADSun+B.m */,
+				9D17C28922CCD3C2007CDECF /* LOADSun+B2.h */,
+				9D17C28A22CCD3C2007CDECF /* LOADSun+B2.m */,
+			);
+			path = "子类父类分类load执行顺序";
+			sourceTree = "<group>";
+		};
 		9D2E4AA322C236C500DEB898 /* Runtime消息转发流程 */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +459,7 @@
 		9DF4379222BFD80500F6459B /* Two */ = {
 			isa = PBXGroup;
 			children = (
+				9D17C27C22CCC3E6007CDECF /* 子类父类分类load执行顺序 */,
 				9DC17FB522CC5F20000B1C42 /* keyWindow */,
 				9DB05D1222C5145B00D1B574 /* 算法 */,
 				9D98910822C3AE2300CC595C /* 多线程 */,
@@ -623,6 +661,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FEB85722BC7C7A0030FD7B /* main.m in Sources */,
+				9D17C28222CCC431007CDECF /* LOADSun.m in Sources */,
+				9D17C28E22CCD3D0007CDECF /* LOADFather+A2.m in Sources */,
+				9D17C28522CCC9F9007CDECF /* LOADFather+A.m in Sources */,
+				9D17C28822CCD1AD007CDECF /* LOADSun+B.m in Sources */,
+				9D17C28B22CCD3C2007CDECF /* LOADSun+B2.m in Sources */,
+				9D17C27F22CCC41F007CDECF /* LOADFather.m in Sources */,
 				9DF437A022BFE1DE00F6459B /* IndexedTableView.m in Sources */,
 				9DC4C29A22BF63FF00C4D35F /* RuntimeMKWVC.m in Sources */,
 				0484196822BCC8440042D8BE /* UITableViewDemoVC.m in Sources */,

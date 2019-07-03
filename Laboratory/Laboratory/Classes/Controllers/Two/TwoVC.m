@@ -56,11 +56,16 @@
     [self baseTableVC_addDataWithTitle:@"@dynamic 会崩溃" andDetail:@"此修饰符将要求自己实现读取方法"];
     [self baseTableVC_addDataWithTitle:@"MRC便利构造器 会崩溃" andDetail:@"使用release 会崩溃"];
     [self baseTableVC_addDataWithTitle:@"弹窗的设计" andDetail:@"2019.7.3"];
+    [self baseTableVC_addDataWithTitle:@"父类-子类-分类load执行顺序" andDetail:@"过来控制台日志看看 >>>"];
     //[self baseTableVC_addDataWithTitle:@"RunLoop 常驻线程" andDetail:@"2019.6.27"];
         
 }
 
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
+    if ([title isEqualToString:@"父类-子类-分类load执行顺序"]) {
+        
+        return;
+    }
     if ([title isEqualToString:@"弹窗的设计"]) {
         KeyWindowVC *vc = [[KeyWindowVC alloc] init];
         [self base_pushVC:vc];
