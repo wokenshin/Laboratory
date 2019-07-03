@@ -20,6 +20,8 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.title = @"KVO";
+    
     _btn = [[UIButton alloc] init];
     [_btn setTitle:@"add" forState:UIControlStateNormal];
     _btn.backgroundColor = [UIColor blueColor];
@@ -31,6 +33,8 @@
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(36);
     }];
+    
+    
     _mobserver = [[MObserver alloc] init];
     _mobj = [[MObject alloc] init];
     

@@ -6,4 +6,5 @@ pod 'Masonry'
 pod 'MLeaksFinder', '~> 1.0.0'
 pod 'SDWebImage'
 pod 'AFNetworking'
+pod 'MBProgressHUD'
 end

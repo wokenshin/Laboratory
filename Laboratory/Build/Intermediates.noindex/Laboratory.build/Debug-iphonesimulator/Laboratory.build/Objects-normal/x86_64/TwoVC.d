@@ -1,4 +1,5 @@
 dependencies: \
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Pods/Headers/Public/MBProgressHUD/MBProgressHUD.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Pods/Headers/Public/Masonry/NSLayoutConstraint+MASDebugAdditions.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Pods/Headers/Public/Masonry/MASLayoutConstraint.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Pods/Headers/Public/Masonry/MASViewConstraint.h \
@@ -24,4 +25,6 @@ dependencies: \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/Runtime消息转发流程/RuntimeObject.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/Timer循环引用/TimerCircleVC.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/多线程/MSVC.h \
-  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/算法/AlgorithmVC.h
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/算法/AlgorithmVC.h \
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/MRCDemo.h \
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/keyWindow/KeyWindowVC.h

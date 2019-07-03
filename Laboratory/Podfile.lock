@@ -16,6 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - FBRetainCycleDetector (0.1.4)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
   - SDWebImage (4.2.2):
@@ -25,6 +26,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Masonry
+  - MBProgressHUD
   - MLeaksFinder (~> 1.0.0)
   - SDWebImage
 
@@ -33,6 +35,7 @@ SPEC REPOS:
     - AFNetworking
     - FBRetainCycleDetector
     - Masonry
+    - MBProgressHUD
     - MLeaksFinder
     - SDWebImage
 
@@ -40,9 +43,10 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
 
-PODFILE CHECKSUM: 4b7f12ae45f81f62fbf7ca9641293a921780aafa
+PODFILE CHECKSUM: a541a3ba3582e9d8c08ad9fc5af3705a2f92f6b4
 
 COCOAPODS: 1.7.1

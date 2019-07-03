@@ -1,4 +1,5 @@
 dependencies: \
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Pods/Headers/Public/MBProgressHUD/MBProgressHUD.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Pods/Headers/Public/Masonry/NSLayoutConstraint+MASDebugAdditions.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Pods/Headers/Public/Masonry/MASLayoutConstraint.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Pods/Headers/Public/Masonry/MASViewConstraint.h \

@@ -13,13 +13,23 @@
 #import "TimerCircleVC.h"
 #import "MSVC.h"
 #import "AlgorithmVC.h"
+#import "MRCDemo.h"
+#import "KeyWindowVC.h"
 
-@interface TwoVC()
+@interface TwoVC(){
+    NSString *kvcDemo2;
+}
 @property (nonatomic, copy) NSMutableArray *mArr;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *kvcDemo;
 
 @end
 
 @implementation TwoVC
+
+//这样修饰的意思是 不让编译器帮我们自动生成setter getter方法，而是要我们自己在代码中实现
+@dynamic name;
+
 
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -29,7 +39,9 @@
 }
 
 - (void)loadTwoVCData{
+    
     [self baseTableVC_addDataWithTitle:@"UITableView重用" andDetail:@"2019.6.23"];
+    [self baseTableVC_addDataWithTitle:@"KVC" andDetail:@"会崩溃 setValue:forUndefinedKey:"];
     [self baseTableVC_addDataWithTitle:@"KVO的实现" andDetail:@"2019.6.24"];
     [self baseTableVC_addDataWithTitle:@"copy1" andDetail:@"self.mArr 会崩溃"];
     [self baseTableVC_addDataWithTitle:@"copy2" andDetail:@"_mArr 不会崩溃"];
@@ -40,11 +52,39 @@
     [self baseTableVC_addDataWithTitle:@"block 截获" andDetail:@"2019.6.26"];
     [self baseTableVC_addDataWithTitle:@"block __blcok" andDetail:@"2019.6.26"];
     [self baseTableVC_addDataWithTitle:@"多线程" andDetail:@"2019.6.26"];
-    //[self baseTableVC_addDataWithTitle:@"RunLoop 常驻线程" andDetail:@"2019.6.27"];
     [self baseTableVC_addDataWithTitle:@"算法" andDetail:@"2019.6.27"];
+    [self baseTableVC_addDataWithTitle:@"@dynamic 会崩溃" andDetail:@"此修饰符将要求自己实现读取方法"];
+    [self baseTableVC_addDataWithTitle:@"MRC便利构造器 会崩溃" andDetail:@"使用release 会崩溃"];
+    [self baseTableVC_addDataWithTitle:@"弹窗的设计" andDetail:@"2019.7.3"];
+    //[self baseTableVC_addDataWithTitle:@"RunLoop 常驻线程" andDetail:@"2019.6.27"];
+        
 }
 
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
+    if ([title isEqualToString:@"弹窗的设计"]) {
+        KeyWindowVC *vc = [[KeyWindowVC alloc] init];
+        [self base_pushVC:vc];
+        return;
+    }
+    if ([title isEqualToString:@"KVC"]) {
+        [self setValue:@"fxw" forKey:@"kvcDemo"];
+        FXWLog(@"kvcDemo == %@", _kvcDemo);
+        
+        [self setValue:@"fantasy" forKey:@"kvcDemo2"];
+        FXWLog(@"kvcDemo2 == %@", kvcDemo2);
+        
+        [self setValue:@"李狗蛋" forKey:@"_kvcDemo3"];//会崩溃 setValue:forUndefinedKey:
+        return;
+    }
+    if ([title isEqualToString:@"MRC便利构造器 会崩溃"]) {
+        MRCDemo *demo = [[MRCDemo alloc] init];
+        [demo testOoe];
+        return;
+    }
+    if ([title isEqualToString:@"@dynamic 会崩溃"]) {
+        self.name = @"kenshin";//因为找不到setter方法 所以会崩溃
+        return;
+    }
     if ([title isEqualToString:@"算法"]) {
         AlgorithmVC *vc = [[AlgorithmVC alloc] init];
         [self base_pushVC:vc];

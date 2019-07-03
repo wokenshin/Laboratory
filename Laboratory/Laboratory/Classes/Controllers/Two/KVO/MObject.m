@@ -20,7 +20,7 @@
 }
 
 - (void)setValue:(int)value{
-    NSLog(@"setValue is calling %d", value);
+    FXWLog(@"在 MObject 中 setValue被调用 %d", value);
 }
 
 - (void)increase

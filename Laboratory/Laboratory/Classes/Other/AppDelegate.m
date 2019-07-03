@@ -60,6 +60,7 @@
     MainTabBarVC *rootVC = [[MainTabBarVC alloc] init];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
+    
 }
 
 @end

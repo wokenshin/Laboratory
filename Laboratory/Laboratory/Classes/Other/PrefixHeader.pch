@@ -29,6 +29,7 @@
 
 //第三方
 #import "Masonry.h"
+#import "MBProgressHUD.h"
 
 #endif  //和 #ifdef __OBJC__ 对应
 

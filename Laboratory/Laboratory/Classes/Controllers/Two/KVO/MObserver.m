@@ -17,7 +17,7 @@
         
         // 获取value的新值
         NSNumber *valueNum = [change valueForKey:NSKeyValueChangeNewKey];
-        NSLog(@"value is %@", valueNum);
+        FXWLog(@"在 MObserver中 监听到 value is %@", valueNum);
     }
 }
 

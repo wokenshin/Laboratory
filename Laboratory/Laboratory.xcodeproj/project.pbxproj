@@ -21,6 +21,7 @@
 		04FEB88422BC8BEA0030FD7B /* OneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88322BC8BEA0030FD7B /* OneVC.m */; };
 		04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88722BC8DCD0030FD7B /* BaseTableVC.m */; };
 		04FEB88D22BC902E0030FD7B /* UISwitchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88B22BC902E0030FD7B /* UISwitchVC.m */; };
+		9D091CDC22CB51460098F4B3 /* MRCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D091CDB22CB51460098F4B3 /* MRCDemo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9D2E4AA622C236E100DEB898 /* RuntimeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2E4AA422C236E100DEB898 /* RuntimeObject.m */; };
 		9D7F430F22C619DC007D9860 /* MasonryPriorityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F430E22C619DC007D9860 /* MasonryPriorityVC.m */; };
 		9D9890FE22C32BCC00CC595C /* NSTimer+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9890FD22C32BCC00CC595C /* NSTimer+FXW.m */; };
@@ -33,6 +34,7 @@
 		9DB05D1822C5164C00D1B574 /* CharReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB05D1722C5164C00D1B574 /* CharReverse.m */; };
 		9DB05D1B22C51B1700D1B574 /* ReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB05D1A22C51B1700D1B574 /* ReverseList.m */; };
 		9DBE576122BE2A5600B68329 /* CLanguageBaseContentVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE576022BE2A5600B68329 /* CLanguageBaseContentVC.mm */; };
+		9DC17FB822CC5F46000B1C42 /* KeyWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC17FB722CC5F46000B1C42 /* KeyWindowVC.m */; };
 		9DC4C29A22BF63FF00C4D35F /* RuntimeMKWVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC4C29922BF63FF00C4D35F /* RuntimeMKWVC.m */; };
 		9DC4C29C22BF9D7300C4D35F /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9DC4C29B22BF9D7300C4D35F /* README */; };
 		9DF4379522BFD81A00F6459B /* TwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4379422BFD81A00F6459B /* TwoVC.m */; };
@@ -93,6 +95,8 @@
 		04FEB89222BC90D10030FD7B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		14C54E56697E211488FC32F2 /* libPods-Laboratory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Laboratory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		712CC02C133EBDCA1F933881 /* Pods-Laboratory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laboratory.release.xcconfig"; path = "Target Support Files/Pods-Laboratory/Pods-Laboratory.release.xcconfig"; sourceTree = "<group>"; };
+		9D091CDA22CB51460098F4B3 /* MRCDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCDemo.h; sourceTree = "<group>"; };
+		9D091CDB22CB51460098F4B3 /* MRCDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCDemo.m; sourceTree = "<group>"; };
 		9D2E4AA422C236E100DEB898 /* RuntimeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeObject.m; sourceTree = "<group>"; };
 		9D2E4AA522C236E100DEB898 /* RuntimeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeObject.h; sourceTree = "<group>"; };
 		9D7F430D22C619DC007D9860 /* MasonryPriorityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryPriorityVC.h; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 		9DB05D1A22C51B1700D1B574 /* ReverseList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseList.m; sourceTree = "<group>"; };
 		9DBE575F22BE2A5600B68329 /* CLanguageBaseContentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLanguageBaseContentVC.h; sourceTree = "<group>"; };
 		9DBE576022BE2A5600B68329 /* CLanguageBaseContentVC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CLanguageBaseContentVC.mm; sourceTree = "<group>"; };
+		9DC17FB622CC5F46000B1C42 /* KeyWindowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyWindowVC.h; sourceTree = "<group>"; };
+		9DC17FB722CC5F46000B1C42 /* KeyWindowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyWindowVC.m; sourceTree = "<group>"; };
 		9DC4C29822BF63FF00C4D35F /* RuntimeMKWVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeMKWVC.h; sourceTree = "<group>"; };
 		9DC4C29922BF63FF00C4D35F /* RuntimeMKWVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeMKWVC.m; sourceTree = "<group>"; };
 		9DC4C29B22BF9D7300C4D35F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -395,6 +401,15 @@
 			path = "C语言基础-Runtime";
 			sourceTree = "<group>";
 		};
+		9DC17FB522CC5F20000B1C42 /* keyWindow */ = {
+			isa = PBXGroup;
+			children = (
+				9DC17FB622CC5F46000B1C42 /* KeyWindowVC.h */,
+				9DC17FB722CC5F46000B1C42 /* KeyWindowVC.m */,
+			);
+			path = keyWindow;
+			sourceTree = "<group>";
+		};
 		9DC4C29722BF63E600C4D35F /* Runtime-慕课网 */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +422,7 @@
 		9DF4379222BFD80500F6459B /* Two */ = {
 			isa = PBXGroup;
 			children = (
+				9DC17FB522CC5F20000B1C42 /* keyWindow */,
 				9DB05D1222C5145B00D1B574 /* 算法 */,
 				9D98910822C3AE2300CC595C /* 多线程 */,
 				9D98910322C330C600CC595C /* Timer循环引用 */,
@@ -415,6 +431,8 @@
 				9DF4379622BFDB3E00F6459B /* UITableView相关面试问题 */,
 				9DF4379322BFD81A00F6459B /* TwoVC.h */,
 				9DF4379422BFD81A00F6459B /* TwoVC.m */,
+				9D091CDA22CB51460098F4B3 /* MRCDemo.h */,
+				9D091CDB22CB51460098F4B3 /* MRCDemo.m */,
 			);
 			path = Two;
 			sourceTree = "<group>";
@@ -615,6 +633,7 @@
 				9DB05D1B22C51B1700D1B574 /* ReverseList.m in Sources */,
 				9DF4379A22BFE12B00F6459B /* IndexedBarVC.m in Sources */,
 				9DB05D1822C5164C00D1B574 /* CharReverse.m in Sources */,
+				9D091CDC22CB51460098F4B3 /* MRCDemo.m in Sources */,
 				0484195D22BC9DD10042D8BE /* InjectionIIIVC.m in Sources */,
 				9DA1EC1822C122D900F01F31 /* KVODemoVC.m in Sources */,
 				0484196422BCC20C0042D8BE /* MasonryVC.m in Sources */,
@@ -626,6 +645,7 @@
 				04FEB84922BC7C780030FD7B /* AppDelegate.m in Sources */,
 				9D7F430F22C619DC007D9860 /* MasonryPriorityVC.m in Sources */,
 				04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */,
+				9DC17FB822CC5F46000B1C42 /* KeyWindowVC.m in Sources */,
 				9D9890FE22C32BCC00CC595C /* NSTimer+FXW.m in Sources */,
 				9DBE576122BE2A5600B68329 /* CLanguageBaseContentVC.mm in Sources */,
 				04FEB87E22BC87F10030FD7B /* MainTabBarVC.m in Sources */,
