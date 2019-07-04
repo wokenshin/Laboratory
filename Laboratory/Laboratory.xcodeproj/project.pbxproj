@@ -367,6 +367,15 @@
 			path = "子类父类分类load执行顺序";
 			sourceTree = "<group>";
 		};
+		9D17C28F22CCFAA8007CDECF /* MRCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9D091CDA22CB51460098F4B3 /* MRCDemo.h */,
+				9D091CDB22CB51460098F4B3 /* MRCDemo.m */,
+			);
+			path = MRCDemo;
+			sourceTree = "<group>";
+		};
 		9D2E4AA322C236C500DEB898 /* Runtime消息转发流程 */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,10 +476,9 @@
 				9D2E4AA322C236C500DEB898 /* Runtime消息转发流程 */,
 				9DA1EC1522C122C700F01F31 /* KVO */,
 				9DF4379622BFDB3E00F6459B /* UITableView相关面试问题 */,
+				9D17C28F22CCFAA8007CDECF /* MRCDemo */,
 				9DF4379322BFD81A00F6459B /* TwoVC.h */,
 				9DF4379422BFD81A00F6459B /* TwoVC.m */,
-				9D091CDA22CB51460098F4B3 /* MRCDemo.h */,
-				9D091CDB22CB51460098F4B3 /* MRCDemo.m */,
 			);
 			path = Two;
 			sourceTree = "<group>";

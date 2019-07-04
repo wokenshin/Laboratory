@@ -20,6 +20,7 @@
 }
 
 - (void)loadTwoVCData{
+    [self baseTableVC_addDataWithTitle:@"选择排序" andDetail:@"2019.7.4"];
     [self baseTableVC_addDataWithTitle:@"字符串反转" andDetail:@"只是对单个字符进行反转，进阶要求单词反转"];
     [self baseTableVC_addDataWithTitle:@"链表反转" andDetail:@"没有完全理解，需要复习"];
     [self baseTableVC_addDataWithTitle:@"有序数组合并" andDetail:@"暂时先不实现"];
@@ -27,9 +28,45 @@
     
 }
 
+//打印整型数组中的所有元素后换行
+void printArrContent(int arr[], int lengthArr){
+    for (int i = 0 ; i < lengthArr; i++) {
+        if (i<lengthArr-1) {
+            printf("%d,",arr[i]);
+        }
+        else{
+            printf("%d\n",arr[i]);
+        }
+    }
+}
+
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
-    if ([title isEqualToString:@"Hash算法"]) {
+    
+    if ([title isEqualToString:@"选择排序"]) {
+        /*
+         选择排序：
+         */
+        int arr[] = {1,2,3,4,5,6,7,50,8,9,10,10,9,8,7,-50,6,5,4,3,2,1,-1,-2,-3,-4,-5,-6,100,-7,-8,-9};
         
+        // 计算数组中数据长度 :
+        // 所有数据的字节数除以一个数据的字节数即为数据的个数 :
+        int lengthArr  = sizeof(arr) / sizeof(int);
+        printArrContent(arr, lengthArr);
+        for (int i = 0; i < lengthArr; i++) {//从第一个元素开始
+            
+            int indexMin = i;
+            for (int j = i+1; j < lengthArr; j++) {//寻找最小数的索引
+                if (arr[j]<arr[indexMin]) {
+                    indexMin = j;
+                }
+                if (indexMin != i) {//如果最小数位置变化，则交换
+                    int tmp = arr[i];
+                    arr[i] = arr[indexMin];
+                    arr[indexMin] = tmp;
+                }
+            }
+        }
+        printArrContent(arr, lengthArr);
         return;
     }
     if ([title isEqualToString:@"有序数组合并"]) {

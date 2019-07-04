@@ -16,5 +16,5 @@ dependencies: \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Pods/Headers/Public/Masonry/Masonry.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Utils/FXW_Define.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Other/PrefixHeader.pch \
-  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/MRCDemo.m \
-  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/MRCDemo.h
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/MRCDemo/MRCDemo.m \
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/MRCDemo/MRCDemo.h

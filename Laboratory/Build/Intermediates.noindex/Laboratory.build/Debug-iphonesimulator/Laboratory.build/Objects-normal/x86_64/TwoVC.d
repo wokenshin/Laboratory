@@ -26,5 +26,5 @@ dependencies: \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/Timer循环引用/TimerCircleVC.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/多线程/MSVC.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/算法/AlgorithmVC.h \
-  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/MRCDemo.h \
+  /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/MRCDemo/MRCDemo.h \
   /Users/kenshinvan/Desktop/GitHub/Laboratory/Laboratory/Laboratory/Classes/Controllers/Two/keyWindow/KeyWindowVC.h
