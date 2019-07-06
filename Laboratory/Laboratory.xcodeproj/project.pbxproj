@@ -30,6 +30,8 @@
 		9D17C28E22CCD3D0007CDECF /* LOADFather+A2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D17C28D22CCD3D0007CDECF /* LOADFather+A2.m */; };
 		9D2E4AA622C236E100DEB898 /* RuntimeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2E4AA422C236E100DEB898 /* RuntimeObject.m */; };
 		9D7F430F22C619DC007D9860 /* MasonryPriorityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F430E22C619DC007D9860 /* MasonryPriorityVC.m */; };
+		9D7FCEC722D0F7620082DC8B /* MyEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FCEC622D0F7620082DC8B /* MyEventVC.m */; };
+		9D7FCECA22D0F7770082DC8B /* MyEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FCEC922D0F7770082DC8B /* MyEventView.m */; };
 		9D9890FE22C32BCC00CC595C /* NSTimer+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9890FD22C32BCC00CC595C /* NSTimer+FXW.m */; };
 		9D98910622C3313B00CC595C /* TimerCircleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D98910522C3313B00CC595C /* TimerCircleVC.m */; };
 		9D98910B22C3AE3B00CC595C /* MSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D98910A22C3AE3B00CC595C /* MSVC.m */; };
@@ -119,6 +121,10 @@
 		9D2E4AA522C236E100DEB898 /* RuntimeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeObject.h; sourceTree = "<group>"; };
 		9D7F430D22C619DC007D9860 /* MasonryPriorityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryPriorityVC.h; sourceTree = "<group>"; };
 		9D7F430E22C619DC007D9860 /* MasonryPriorityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryPriorityVC.m; sourceTree = "<group>"; };
+		9D7FCEC522D0F7620082DC8B /* MyEventVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEventVC.h; sourceTree = "<group>"; };
+		9D7FCEC622D0F7620082DC8B /* MyEventVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyEventVC.m; sourceTree = "<group>"; };
+		9D7FCEC822D0F7770082DC8B /* MyEventView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEventView.h; sourceTree = "<group>"; };
+		9D7FCEC922D0F7770082DC8B /* MyEventView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyEventView.m; sourceTree = "<group>"; };
 		9D9890FC22C32BCC00CC595C /* NSTimer+FXW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FXW.h"; sourceTree = "<group>"; };
 		9D9890FD22C32BCC00CC595C /* NSTimer+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FXW.m"; sourceTree = "<group>"; };
 		9D98910422C3313B00CC595C /* TimerCircleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerCircleVC.h; sourceTree = "<group>"; };
@@ -385,6 +391,17 @@
 			path = "Runtime消息转发流程";
 			sourceTree = "<group>";
 		};
+		9D7FCEC422D0F74A0082DC8B /* 响应者链 */ = {
+			isa = PBXGroup;
+			children = (
+				9D7FCEC522D0F7620082DC8B /* MyEventVC.h */,
+				9D7FCEC622D0F7620082DC8B /* MyEventVC.m */,
+				9D7FCEC822D0F7770082DC8B /* MyEventView.h */,
+				9D7FCEC922D0F7770082DC8B /* MyEventView.m */,
+			);
+			path = "响应者链";
+			sourceTree = "<group>";
+		};
 		9D9890FB22C32BB700CC595C /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,6 +485,7 @@
 		9DF4379222BFD80500F6459B /* Two */ = {
 			isa = PBXGroup;
 			children = (
+				9D7FCEC422D0F74A0082DC8B /* 响应者链 */,
 				9D17C27C22CCC3E6007CDECF /* 子类父类分类load执行顺序 */,
 				9DC17FB522CC5F20000B1C42 /* keyWindow */,
 				9DB05D1222C5145B00D1B574 /* 算法 */,
@@ -683,6 +701,8 @@
 				04FEB88422BC8BEA0030FD7B /* OneVC.m in Sources */,
 				9DA1EC1E22C122E800F01F31 /* MObserver.m in Sources */,
 				9DB05D1B22C51B1700D1B574 /* ReverseList.m in Sources */,
+				9D7FCEC722D0F7620082DC8B /* MyEventVC.m in Sources */,
+				9D7FCECA22D0F7770082DC8B /* MyEventView.m in Sources */,
 				9DF4379A22BFE12B00F6459B /* IndexedBarVC.m in Sources */,
 				9DB05D1822C5164C00D1B574 /* CharReverse.m in Sources */,
 				9D091CDC22CB51460098F4B3 /* MRCDemo.m in Sources */,
