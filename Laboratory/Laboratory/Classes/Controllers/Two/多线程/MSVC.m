@@ -9,6 +9,7 @@
 #import "MSVC.h"
 
 @implementation MSVC
+
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.title = @"多线程";

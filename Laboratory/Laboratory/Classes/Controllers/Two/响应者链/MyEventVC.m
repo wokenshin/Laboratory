@@ -52,123 +52,123 @@
         make.height.mas_equalTo(height);
     }];
     
-    _viewA1 = [[MyEventView alloc] init];
-    _viewA1.name = @"绿色View1";
-    _viewA1.backgroundColor = [UIColor greenColor];
-    [_viewA addSubview:_viewA1];
-    [_viewA1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(margin);
-        make.left.mas_equalTo(margin);
-        make.right.mas_equalTo(-margin);
-        make.height.mas_equalTo(heightSub);
-    }];
-    
-    UILabel *lab1 = [[UILabel alloc] init];
-    lab1.text = @"最下层视图";
-    lab1.textColor = [UIColor whiteColor];
-    [_viewA addSubview:lab1];
-    [lab1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(0);
-    }];
-    
-    _viewA2 = [[MyEventView alloc] init];
-    _viewA2.name = @"绿色View2";
-    _viewA2.backgroundColor = [UIColor greenColor];
-    [_viewA addSubview:_viewA2];
-    [_viewA2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(-margin);
-        make.left.mas_equalTo(margin);
-        make.right.mas_equalTo(-margin);
-        make.height.mas_equalTo(heightSub);
-    }];
-
-#pragma mark - ViewB
-
-    _viewB = [[MyEventView alloc] init];
-    _viewB.name = @"灰色View";
-    _viewB.alpha = 0.6;
-    _viewB.backgroundColor = [UIColor grayColor];
-    [self.view addSubview:_viewB];
-    [_viewB mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.viewA.mas_bottom).offset(-90);
-        make.right.mas_equalTo(-margin);
-        make.width.mas_equalTo(width);
-        make.height.mas_equalTo(height);
-    }];
-    
-    _viewB1 = [[MyEventView alloc] init];
-    _viewB1.name = @"黄色View1";
-    _viewB1.backgroundColor = [UIColor yellowColor];
-    [_viewB addSubview:_viewB1];
-    [_viewB1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(margin);
-        make.left.mas_equalTo(margin);
-        make.right.mas_equalTo(-margin);
-        make.height.mas_equalTo(heightSub);
-    }];
-    
-    UILabel *lab2 = [[UILabel alloc] init];
-    lab2.text = @"中间层视图";
-    lab2.textColor = [UIColor whiteColor];
-    [_viewB addSubview:lab2];
-    [lab2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(0);
-    }];
-    
-    _viewB2 = [[MyEventView alloc] init];
-    _viewB2.name = @"黄色View2";
-    _viewB2.backgroundColor = [UIColor yellowColor];
-    [_viewB addSubview:_viewB2];
-    [_viewB2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(-margin);
-        make.left.mas_equalTo(margin);
-        make.right.mas_equalTo(-margin);
-        make.height.mas_equalTo(heightSub);
-    }];
-    
-#pragma mark - ViewC
-    _viewC = [[MyEventView alloc] init];
-    _viewC.name = @"黑色View";
-    _viewC.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:_viewC];
-    [_viewC mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.viewB.mas_bottom).offset(margin);
-        make.centerX.mas_equalTo(0);
-        make.width.mas_equalTo(width);
-        make.height.mas_equalTo(height);
-    }];
-    
-    _viewC1 = [[MyEventView alloc] init];
-    _viewC1.name = @"红色View1";
-    _viewC1.backgroundColor = [UIColor redColor];
-    [_viewC addSubview:_viewC1];
-    [_viewC1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(margin);
-        make.left.mas_equalTo(margin);
-        make.right.mas_equalTo(-margin);
-        make.height.mas_equalTo(heightSub);
-    }];
-    
-    UILabel *lab3 = [[UILabel alloc] init];
-    lab3.text = @"最上层视图";
-    lab3.textColor = [UIColor whiteColor];
-    [_viewC addSubview:lab3];
-    [lab3 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(0);
-    }];
-    
-    _viewC2 = [[MyEventView alloc] init];
-    _viewC2.name = @"红色View2";
-    _viewC2.backgroundColor = [UIColor redColor];
-    [_viewC addSubview:_viewC2];
-    [_viewC2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(-margin);
-        make.left.mas_equalTo(margin);
-        make.right.mas_equalTo(-margin);
-        make.height.mas_equalTo(heightSub);
-    }];
-
-    FXWLog(@"UIView userInteractionEnabled属性默认是:%d", _viewC2.userInteractionEnabled);
+//    _viewA1 = [[MyEventView alloc] init];
+//    _viewA1.name = @"绿色View1";
+//    _viewA1.backgroundColor = [UIColor greenColor];
+//    [_viewA addSubview:_viewA1];
+//    [_viewA1 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(margin);
+//        make.left.mas_equalTo(margin);
+//        make.right.mas_equalTo(-margin);
+//        make.height.mas_equalTo(heightSub);
+//    }];
+//
+//    UILabel *lab1 = [[UILabel alloc] init];
+//    lab1.text = @"最下层视图";
+//    lab1.textColor = [UIColor whiteColor];
+//    [_viewA addSubview:lab1];
+//    [lab1 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.mas_equalTo(0);
+//    }];
+//
+//    _viewA2 = [[MyEventView alloc] init];
+//    _viewA2.name = @"绿色View2";
+//    _viewA2.backgroundColor = [UIColor greenColor];
+//    [_viewA addSubview:_viewA2];
+//    [_viewA2 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.bottom.mas_equalTo(-margin);
+//        make.left.mas_equalTo(margin);
+//        make.right.mas_equalTo(-margin);
+//        make.height.mas_equalTo(heightSub);
+//    }];
+//
+//#pragma mark - ViewB
+//
+//    _viewB = [[MyEventView alloc] init];
+//    _viewB.name = @"灰色View";
+//    _viewB.alpha = 0.6;
+//    _viewB.backgroundColor = [UIColor grayColor];
+//    [self.view addSubview:_viewB];
+//    [_viewB mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(self.viewA.mas_bottom).offset(-90);
+//        make.right.mas_equalTo(-margin);
+//        make.width.mas_equalTo(width);
+//        make.height.mas_equalTo(height);
+//    }];
+//
+//    _viewB1 = [[MyEventView alloc] init];
+//    _viewB1.name = @"黄色View1";
+//    _viewB1.backgroundColor = [UIColor yellowColor];
+//    [_viewB addSubview:_viewB1];
+//    [_viewB1 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(margin);
+//        make.left.mas_equalTo(margin);
+//        make.right.mas_equalTo(-margin);
+//        make.height.mas_equalTo(heightSub);
+//    }];
+//
+//    UILabel *lab2 = [[UILabel alloc] init];
+//    lab2.text = @"中间层视图";
+//    lab2.textColor = [UIColor whiteColor];
+//    [_viewB addSubview:lab2];
+//    [lab2 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.mas_equalTo(0);
+//    }];
+//
+//    _viewB2 = [[MyEventView alloc] init];
+//    _viewB2.name = @"黄色View2";
+//    _viewB2.backgroundColor = [UIColor yellowColor];
+//    [_viewB addSubview:_viewB2];
+//    [_viewB2 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.bottom.mas_equalTo(-margin);
+//        make.left.mas_equalTo(margin);
+//        make.right.mas_equalTo(-margin);
+//        make.height.mas_equalTo(heightSub);
+//    }];
+//
+//#pragma mark - ViewC
+//    _viewC = [[MyEventView alloc] init];
+//    _viewC.name = @"黑色View";
+//    _viewC.backgroundColor = [UIColor blackColor];
+//    [self.view addSubview:_viewC];
+//    [_viewC mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(self.viewB.mas_bottom).offset(margin);
+//        make.centerX.mas_equalTo(0);
+//        make.width.mas_equalTo(width);
+//        make.height.mas_equalTo(height);
+//    }];
+//
+//    _viewC1 = [[MyEventView alloc] init];
+//    _viewC1.name = @"红色View1";
+//    _viewC1.backgroundColor = [UIColor redColor];
+//    [_viewC addSubview:_viewC1];
+//    [_viewC1 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(margin);
+//        make.left.mas_equalTo(margin);
+//        make.right.mas_equalTo(-margin);
+//        make.height.mas_equalTo(heightSub);
+//    }];
+//
+//    UILabel *lab3 = [[UILabel alloc] init];
+//    lab3.text = @"最上层视图";
+//    lab3.textColor = [UIColor whiteColor];
+//    [_viewC addSubview:lab3];
+//    [lab3 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.mas_equalTo(0);
+//    }];
+//
+//    _viewC2 = [[MyEventView alloc] init];
+//    _viewC2.name = @"红色View2";
+//    _viewC2.backgroundColor = [UIColor redColor];
+//    [_viewC addSubview:_viewC2];
+//    [_viewC2 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.bottom.mas_equalTo(-margin);
+//        make.left.mas_equalTo(margin);
+//        make.right.mas_equalTo(-margin);
+//        make.height.mas_equalTo(heightSub);
+//    }];
+//
+//    FXWLog(@"UIView userInteractionEnabled属性默认是:%d", _viewC2.userInteractionEnabled);
     
 }
 

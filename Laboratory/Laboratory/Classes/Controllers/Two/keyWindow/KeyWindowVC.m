@@ -58,11 +58,28 @@
         make.height.mas_equalTo(36);
         make.width.mas_equalTo(200);
     }];
+    [self printKeyWindowAndDelegateWindow];
+}
+
+- (void)printKeyWindowAndDelegateWindow{
     UIWindow *w1 = [[[UIApplication sharedApplication] delegate] window];
     UIWindow *w2 = [UIApplication sharedApplication].keyWindow;
-    FXWLog(@"%p", w1);
-    FXWLog(@"%p", w2);
+    FXWLog(@"%p : delegate window", w1);
+    FXWLog(@"%p : keyWindow", w2);
     //这里有个疑问 为什么w1和w2都是同一个window，但是自定义弹窗却一定要放在w1上呢？
+    /*
+     实际上 默认情况下 这俩是同一个对象，但是当有弹窗出现的时候，就不是同一个对象了。
+     // 参考为的文章：https://blog.csdn.net/wokenshin/article/details/94983913
+     
+     下面内容来自：https://ios.nobady.cn/ UIKit部分
+     delegate.window 程序启动时设置的window对象。
+     keyWindow 这个属性保存了[windows]数组中的[UIWindow]对象，该对象最近被发送了[makeKeyAndVisible]消息
+     
+     一般情况下 delegate.window 和 keyWindow 是同一个对象，
+     但不能保证keyWindow就是delegate.window，
+     因为keyWindow会因为makeKeyAndVisible而变化，
+     例如，程序中添加了一个悬浮窗口，这个时候keywindow就会变化。
+     */
 }
 
 - (void)clickBtnBad{
@@ -75,6 +92,8 @@
     redView.backgroundColor = [UIColor redColor];
     [[UIApplication sharedApplication].keyWindow addSubview:redView];
     
+    [self printKeyWindowAndDelegateWindow];
+    
 }
 
 - (void)clickBtnGood{
@@ -86,6 +105,8 @@
     // 创建一个alertView
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"巧合OK" message:@"在系统弹窗出现【之前】，添加到keyWindow上的视图就【不会】随着弹窗的消失而消失" delegate:self cancelButtonTitle:@"取消" otherButtonTitles: nil];
     [alertView show];
+    
+    [self printKeyWindowAndDelegateWindow];
 }
 
 - (void)clickBtnBest{
@@ -98,6 +119,7 @@
     redView.backgroundColor = [UIColor redColor];
     [[[[UIApplication sharedApplication] delegate] window] addSubview:redView];
     
+    [self printKeyWindowAndDelegateWindow];
 }
 
 @end

@@ -16,6 +16,7 @@
 #import "MRCDemo.h"
 #import "KeyWindowVC.h"
 #import "MyEventVC.h"
+#import "NSOPBVC.h"
 
 @interface TwoVC(){
     NSString *kvcDemo2;
@@ -40,8 +41,12 @@
 }
 
 - (void)loadTwoVCData{
-    
+    [self baseTableVC_addDataWithTitle:@"字符排序-大写靠前" andDetail:@"2019.7.12"];
+    [self baseTableVC_addDataWithTitle:@"实现单例" andDetail:@"2019.7.12"];
+    [self baseTableVC_addDataWithTitle:@"打印字符串对应子字符的下标" andDetail:@"2019.7.9 容易题"];
+    [self baseTableVC_addDataWithTitle:@"NSOperationBlock 面试题" andDetail:@"2019.7.8"];
     [self baseTableVC_addDataWithTitle:@"响应者链" andDetail:@"2019.7.6"];
+    [self baseTableVC_addDataWithTitle:@"弹窗的设计" andDetail:@"2019.7.3"];
     [self baseTableVC_addDataWithTitle:@"UITableView重用" andDetail:@"2019.6.23"];
     [self baseTableVC_addDataWithTitle:@"KVC" andDetail:@"会崩溃 setValue:forUndefinedKey:"];
     [self baseTableVC_addDataWithTitle:@"KVO的实现" andDetail:@"2019.6.24"];
@@ -57,13 +62,60 @@
     [self baseTableVC_addDataWithTitle:@"算法" andDetail:@"2019.6.27"];
     [self baseTableVC_addDataWithTitle:@"@dynamic 会崩溃" andDetail:@"此修饰符将要求自己实现读取方法"];
     [self baseTableVC_addDataWithTitle:@"MRC便利构造器 会崩溃" andDetail:@"使用release 会崩溃"];
-    [self baseTableVC_addDataWithTitle:@"弹窗的设计" andDetail:@"2019.7.3"];
     [self baseTableVC_addDataWithTitle:@"父类-子类-分类load执行顺序" andDetail:@"过滤控制台日志看看 >>>"];
     //[self baseTableVC_addDataWithTitle:@"RunLoop 常驻线程" andDetail:@"2019.6.27"];
         
 }
 
 - (void)baseTableVC_clickCellWithTitle:(NSString *)title{
+    if ([title isEqualToString:@"字符排序-大写靠前"]) {
+        /*
+         今天去腾讯面试啦，虽然是外派过去驻场的项目，但是是由腾讯的前辈负责面试的，感觉很兴奋
+         面试题不多，也不难，就两个
+         字符排序-大写靠前，如 “abcDHelloWorld”-->修改成"DHWabcelloorld"
+         大写字母靠前，其他字母一次考后即可
+         思路是ASKII码 判断 大小写字母的边界数 if判断即可
+         我记得面试的时候我写成 96了。。。
+         
+         思路：找到大写字母保存到零时变量中，此时原来放大写字母的位置为“空”，将左边所有元素右移一个单位。将临时保存的大写字母放到左边。依次类推
+         */
+        
+        char arr[] = "abcDHelloWorld";
+        unsigned long len = strlen(arr);
+        unsigned long indexP = 0;
+        printCharArr(arr);
+        for (int i = 0; i < len; i++) {
+            if (arr[i] < 'a') {//这里直接这么写就可以了
+                
+                char charDX = arr[i];//第一步中间变量保存大写字母
+                
+                //第二步 将取出大写字母位置前的所有字符向右移动一个单位
+                for (unsigned long j = i; j > indexP; j--) {
+                    arr[j] = arr[j-1];
+                }
+                
+                //第三步 讲最前面空出的位置放上 charDX
+                arr[indexP] = charDX;
+                indexP++;//此时大写字母和索引都+1
+                
+            }
+        }
+        printCharArr(arr);
+        
+        return;
+    }
+    if ([title isEqualToString:@"实现单例"]) {
+        
+        return;
+    }
+    if ([title isEqualToString:@"打印字符串对应子字符的下标"]) {
+        [self printSubIndexStrInString];
+        return;
+    }
+    if ([title isEqualToString:@"NSOperationBlock 面试题"]) {
+        NSOPBVC *vc = [[NSOPBVC alloc] init];
+        [self base_pushVC:vc];
+    }
     if ([title isEqualToString:@"响应者链"]) {
         MyEventVC *vc = [[MyEventVC alloc] init];
         [self base_pushVC:vc];
@@ -175,6 +227,28 @@
     }
     FXWLog(@"没有找到对应选项！！！");
     
+}
+
+- (void)printSubIndexStrInString{
+    char arr[] = "hellomysweetkenshin";
+    // 计算数组中数据长度 :
+    // 所有数据的字节数除以一个数据的字节数即为数据的个数 :
+    int lengthArr  = sizeof(arr) / sizeof(char);
+    for (int i = 0; i < lengthArr; i++) {
+        char tmp = arr[i];
+        if (tmp == 'e') {
+            printf("%d\n", i);
+        }
+    }
+    
+}
+
+//打印字节数组中的全部内容
+void printCharArr(char arr[]){
+    for (unsigned long i =0; i < strlen(arr); i++) {
+        printf("%c", arr[i]);
+    }
+    printf("\n");
 }
 
 @end
