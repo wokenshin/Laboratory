@@ -22,6 +22,7 @@
 		04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88722BC8DCD0030FD7B /* BaseTableVC.m */; };
 		04FEB88D22BC902E0030FD7B /* UISwitchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FEB88B22BC902E0030FD7B /* UISwitchVC.m */; };
 		9D091CDC22CB51460098F4B3 /* MRCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D091CDB22CB51460098F4B3 /* MRCDemo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D0B311022D9A3F10047EED4 /* Sington.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0B310F22D9A3F10047EED4 /* Sington.m */; };
 		9D1766A122D3791E00664E0A /* NSOPBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1766A022D3791E00664E0A /* NSOPBVC.m */; };
 		9D17C27F22CCC41F007CDECF /* LOADFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D17C27E22CCC41F007CDECF /* LOADFather.m */; };
 		9D17C28222CCC431007CDECF /* LOADSun.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D17C28122CCC431007CDECF /* LOADSun.m */; };
@@ -106,6 +107,8 @@
 		712CC02C133EBDCA1F933881 /* Pods-Laboratory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laboratory.release.xcconfig"; path = "Target Support Files/Pods-Laboratory/Pods-Laboratory.release.xcconfig"; sourceTree = "<group>"; };
 		9D091CDA22CB51460098F4B3 /* MRCDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCDemo.h; sourceTree = "<group>"; };
 		9D091CDB22CB51460098F4B3 /* MRCDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCDemo.m; sourceTree = "<group>"; };
+		9D0B310E22D9A3F10047EED4 /* Sington.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sington.h; sourceTree = "<group>"; };
+		9D0B310F22D9A3F10047EED4 /* Sington.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sington.m; sourceTree = "<group>"; };
 		9D17669F22D3791E00664E0A /* NSOPBVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOPBVC.h; sourceTree = "<group>"; };
 		9D1766A022D3791E00664E0A /* NSOPBVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOPBVC.m; sourceTree = "<group>"; };
 		9D17C27D22CCC41F007CDECF /* LOADFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LOADFather.h; sourceTree = "<group>"; };
@@ -357,6 +360,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9D0B310D22D9A39D0047EED4 /* 单例代码 */ = {
+			isa = PBXGroup;
+			children = (
+				9D0B310E22D9A3F10047EED4 /* Sington.h */,
+				9D0B310F22D9A3F10047EED4 /* Sington.m */,
+			);
+			path = "单例代码";
+			sourceTree = "<group>";
+		};
 		9D17669E22D378F700664E0A /* NSOperationBlockDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -497,6 +509,7 @@
 		9DF4379222BFD80500F6459B /* Two */ = {
 			isa = PBXGroup;
 			children = (
+				9D0B310D22D9A39D0047EED4 /* 单例代码 */,
 				9D17669E22D378F700664E0A /* NSOperationBlockDemo */,
 				9D7FCEC422D0F74A0082DC8B /* 响应者链 */,
 				9D17C27C22CCC3E6007CDECF /* 子类父类分类load执行顺序 */,
@@ -731,6 +744,7 @@
 				04FEB84922BC7C780030FD7B /* AppDelegate.m in Sources */,
 				9D7F430F22C619DC007D9860 /* MasonryPriorityVC.m in Sources */,
 				04FEB88822BC8DCD0030FD7B /* BaseTableVC.m in Sources */,
+				9D0B311022D9A3F10047EED4 /* Sington.m in Sources */,
 				9DC17FB822CC5F46000B1C42 /* KeyWindowVC.m in Sources */,
 				9D9890FE22C32BCC00CC595C /* NSTimer+FXW.m in Sources */,
 				9DBE576122BE2A5600B68329 /* CLanguageBaseContentVC.mm in Sources */,

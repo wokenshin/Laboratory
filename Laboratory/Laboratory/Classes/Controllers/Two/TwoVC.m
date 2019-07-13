@@ -17,6 +17,8 @@
 #import "KeyWindowVC.h"
 #import "MyEventVC.h"
 #import "NSOPBVC.h"
+#import "Sington.h"
+
 
 @interface TwoVC(){
     NSString *kvcDemo2;
@@ -42,7 +44,7 @@
 
 - (void)loadTwoVCData{
     [self baseTableVC_addDataWithTitle:@"字符排序-大写靠前" andDetail:@"2019.7.12"];
-    [self baseTableVC_addDataWithTitle:@"实现单例" andDetail:@"2019.7.12"];
+    [self baseTableVC_addDataWithTitle:@"实现单例" andDetail:@"重复调用 看下控制台输出"];
     [self baseTableVC_addDataWithTitle:@"打印字符串对应子字符的下标" andDetail:@"2019.7.9 容易题"];
     [self baseTableVC_addDataWithTitle:@"NSOperationBlock 面试题" andDetail:@"2019.7.8"];
     [self baseTableVC_addDataWithTitle:@"响应者链" andDetail:@"2019.7.6"];
@@ -105,7 +107,32 @@
         return;
     }
     if ([title isEqualToString:@"实现单例"]) {
+        /*
+         面试官问 如果自己要实现一个单例应该怎么做 它的原理是什么呢？
+         
+         说一说感想：
+         面试题感觉并不难，但是很多知识点平时真的积累得不好，也忘记温故而知新的道理。
+         就好比这里的两个面试题暴露出的问题，个人对知识点的掌握程度还是有待提高的，这只是冰山一角，努力吧，其实很多事情不是真的喜欢，而是你要明白为什么要做好它。
+         如果你真的喜欢，其实那是很幸福的一件事情。而糟糕的事，有时候会发现喜欢的东西并不等于工作。关于如何看待自己的工作这个问题，我想问已经成熟很多了。
+         还不够，继续努力。
+         */
+        Sington *obj  = [Sington alloc];
+        Sington *obj5 = [Sington shareSington];
+        Sington *obj1 = [[Sington alloc] init];
+        Sington *obj2 = [Sington new];
+        Sington *obj3 = [obj1 copy];
+        Sington *obj4 = [obj1 mutableCopy];
         
+        [obj1 test];
+        [obj2 test];
+        [obj3 test];
+        [obj4 test];
+        [obj5 test];
+        obj1 = nil;
+        obj2 = nil;
+        obj3 = nil;
+        obj4 = nil;
+        obj5 = nil;
         return;
     }
     if ([title isEqualToString:@"打印字符串对应子字符的下标"]) {
