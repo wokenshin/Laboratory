@@ -26,7 +26,8 @@
 @property (nonatomic, copy) NSMutableArray *mArr;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *kvcDemo;
-
+@property (nonatomic, strong) Sington *globalSington;
+@property (nonatomic, strong) NSObject *test;
 @end
 
 @implementation TwoVC
@@ -114,7 +115,14 @@
          面试题感觉并不难，但是很多知识点平时真的积累得不好，也忘记温故而知新的道理。
          就好比这里的两个面试题暴露出的问题，个人对知识点的掌握程度还是有待提高的，这只是冰山一角，努力吧，其实很多事情不是真的喜欢，而是你要明白为什么要做好它。
          如果你真的喜欢，其实那是很幸福的一件事情。而糟糕的事，有时候会发现喜欢的东西并不等于工作。关于如何看待自己的工作这个问题，我想问已经成熟很多了。
-         还不够，继续努力。
+         还不够，继续努力。然后为了安全可以将指针的指向只为null或者0x0
+         
+         最终收获：2019.7.17
+         自己的理解结合资料和前辈的讲解
+         在创建单例的时候，由于使用了static 静态变量，我们创建的对象是分配到堆区的，但是指针保存在了全局区域。
+         当将指针置为nil之后，堆内存会释放，此时也调用了dealloc方法，但是静态变量不会被释放。也不需要free，
+         free是对堆内存的释放，对指针不存在free的概念。
+         
          */
         Sington *obj  = [Sington alloc];
         Sington *obj5 = [Sington shareSington];
@@ -122,6 +130,10 @@
         Sington *obj2 = [Sington new];
         Sington *obj3 = [obj1 copy];
         Sington *obj4 = [obj1 mutableCopy];
+        if (_globalSington == nil) {
+            _globalSington = [Sington shareSington];
+        }
+        [_globalSington test];
         
         [obj1 test];
         [obj2 test];
@@ -133,6 +145,12 @@
         obj3 = nil;
         obj4 = nil;
         obj5 = nil;
+        
+        _test = [[NSObject alloc] init];
+        _test = nil;
+        
+        [obj removeSelf];//这样操作的话 就是真的拿到不愿来的单例了
+        _globalSington = nil;
         return;
     }
     if ([title isEqualToString:@"打印字符串对应子字符的下标"]) {

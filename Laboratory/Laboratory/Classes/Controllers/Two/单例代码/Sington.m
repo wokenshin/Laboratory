@@ -14,6 +14,12 @@
 
 @implementation Sington
 
+////断言
+//+ (instancetype)alloc {
+//    NSCAssert(!_instance, @"OneTimeClass类只能初始化一次");
+//    return [super alloc];
+//}
+
 + (instancetype)shareSington{
     return [[self alloc] init];
 }
@@ -43,6 +49,20 @@ static Sington *_instance = nil;
 - (void)test{
     //通过代码验证，在将我们的单例置为nil之后，再重新获取单例，依然能拿到原先的单例，说明将单例置为nil是无法释放单例的
     //那么单例应该如何释放呢？或许这是一个伪命题 单例就是无法释放的对象 有时间的时候再去研究下
-    FXWLog(@"你将为置为nil，我还在内存当中，获取单例还能找到我 我的内存地址:%p", _instance);
+    FXWLog(@"我是单例 我的内存地址:%p self：%p", _instance, self);
+}
+
+- (void)removeSelf{
+    /*
+     如果在这里将静态变量置为nil的话 那么就无法获取先前的指针地址了，
+     而且由于 dispatch_once 只会执行一次的关系
+     所以_instance不会在此被创建
+     */
+    _instance = nil;
+}
+
+- (void)dealloc
+{
+    FXWLog(@"我是单例 TM 我释放了！！！");
 }
 @end

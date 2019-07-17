@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shareSington;
 - (void)test;
-
+- (void)removeSelf;
 @end
 
 NS_ASSUME_NONNULL_END
