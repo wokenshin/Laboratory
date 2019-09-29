@@ -1,0 +1,6 @@
+framework module GitTest {
+  umbrella header "GitTest.h"
+
+  export *
+  module * { export * }
+}
