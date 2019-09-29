@@ -1,0 +1,6 @@
+framework module GitSDK {
+  umbrella header "GitSDK.h"
+
+  export *
+  module * { export * }
+}
