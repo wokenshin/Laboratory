@@ -149,7 +149,7 @@
         _test = [[NSObject alloc] init];
         _test = nil;
         
-        [obj removeSelf];//这样操作的话 就是真的拿到不愿来的单例了
+        [obj removeSelf];//这样操作的话 就是真的拿到不愿来的单例了【这样做之后 堆内存中的单例对象会被释放，而全局区域中的静态变量依然存在】
         _globalSington = nil;
         return;
     }

@@ -21,7 +21,7 @@
 //}
 
 + (instancetype)shareSington{
-    return [[self alloc] init];
+    return [[self alloc] init];//---> alloc 的时候会--->会走 allocWithZone
 }
 
 // 创建静态对象 防止外部访问
@@ -49,7 +49,7 @@ static Sington *_instance = nil;
 - (void)test{
     //通过代码验证，在将我们的单例置为nil之后，再重新获取单例，依然能拿到原先的单例，说明将单例置为nil是无法释放单例的
     //那么单例应该如何释放呢？或许这是一个伪命题 单例就是无法释放的对象 有时间的时候再去研究下
-    FXWLog(@"我是单例 我的内存地址:%p self：%p", _instance, self);
+    FXWLog(@"我是单例 我的首地址:%p self：%p", _instance, self);
 }
 
 - (void)removeSelf{
@@ -58,11 +58,17 @@ static Sington *_instance = nil;
      而且由于 dispatch_once 只会执行一次的关系
      所以_instance不会在此被创建
      */
+    FXWLog(@"打印单例静态变量的【地址 全局区域指针的内存地址】：%p", &_instance);
+    FXWLog(@"打印单例静态变量的【内容 堆内存中单例对象的首地址】：%p", _instance);
     _instance = nil;
+    FXWLog(@"打印单例静态变量的【地址 全局区域指针的内存地址】：%p", &_instance);
+    FXWLog(@"打印单例静态变量的【内容 堆内存中单例对象的首地址】：%p", _instance);
 }
 
 - (void)dealloc
 {
     FXWLog(@"我是单例 TM 我释放了！！！");
+    FXWLog(@"打印单例静态变量的【地址 全局区域指针的内存地址】：%p", &_instance);
+    FXWLog(@"打印单例静态变量的【内容 堆内存中单例对象的首地址】：%p", _instance);
 }
 @end

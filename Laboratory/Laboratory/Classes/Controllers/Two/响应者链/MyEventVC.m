@@ -11,7 +11,7 @@
 
 //这里有一个疑问：为什么点击 MyEventView 视图后，在控制台可以看到 “两次t一模一样的输出结果呢？”难道不是应该只有“一次”吗？
 //我已在此处提问：https://segmentfault.com/q/1010000019686475
-
+//我在想是不是重写的方法本身有问题？？？ 2019.7.19
 
 @interface MyEventVC ()
 @property (nonatomic, strong) MyEventView *viewA;//父视图

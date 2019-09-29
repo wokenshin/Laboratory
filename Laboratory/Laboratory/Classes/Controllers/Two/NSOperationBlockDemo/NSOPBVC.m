@@ -11,6 +11,7 @@
 //本demo是一个面试题 来自2019.7.8.pm 15:00 深圳华润置地大厦E座 某公司
 @interface NSOPBVC ()
 @property (nonatomic, strong) UILabel *lab;
+
 @end
 
 @implementation NSOPBVC
@@ -28,7 +29,9 @@
     
     //用 NSPoerationBlock 在默认的队列中执行 block中 NSThread 睡4s 然后 给 lab赋新值
     //看看程序会怎样？
+    
 }
+
 
 
 @end
