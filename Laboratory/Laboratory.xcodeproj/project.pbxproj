@@ -247,8 +247,8 @@
 		04FEB84622BC7C780030FD7B /* Laboratory */ = {
 			isa = PBXGroup;
 			children = (
-				04FEB85522BC7C7A0030FD7B /* Info.plist */,
 				04FEB87922BC87780030FD7B /* Classes */,
+				04FEB85522BC7C7A0030FD7B /* Info.plist */,
 			);
 			path = Laboratory;
 			sourceTree = "<group>";
